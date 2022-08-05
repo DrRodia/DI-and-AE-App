@@ -1,135 +1,617 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/tox logo 96.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <title>Substances</title>
-  </head>
-  <body>
-    <!-----------------------------Let's cvreate a Navbar-------------------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html"
-          >Narcotic Instructed Zombie</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarColor02"
-          aria-controls="navbarColor02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/tox logo 96.png">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"/>
+   <title>Substances</title>
 
-        <div class="collapse navbar-collapse" id="navbarColor02">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./news.html">News et Articles</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./substances.html">Substances</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Physiologie</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./secourisme.html">Secourisme et RDR</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Legislation</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Dropdown</a
-              >
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">clique</a>
-                <a class="dropdown-item" href="#">cherche</a>
-                <a class="dropdown-item" href="#">trouve</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Separated link</a>
-              </div>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-sm-2"
-              type="text"
-              placeholder="Search"
-            />
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
+  
+</head>
+<body>
+
+    <!-----------------------------Let's cvreate a Navbar-------------------------------------------------->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">Narcotic Instructed Zombie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./Substances.html">Substances</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Physio.html">Physiologie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Interactions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Secourisme.html">Secourisme et RDR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Urgences</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
-    </nav>
-    <br />
-    <!-----------------------------Lets try to put some article preview---------------------------------------->
-    <h1>SUBSTANCES</h1>
-    <br />
-    <div
-      class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5"
-    >
-      <div class="col mb-4">
-        <div class="card">
-          <a href="./articles/ketamine.html"
-            ><img
-              src="./assets/kétamine_logo.jpg"
-              class="card-img-top"
-              alt="..."
-          /></a>
-          <div class="card-body">
-            <h5 class="card-title">Kétamine</h5>
-            <p class="card-text">
-              Dérivée de la phencyclidine. Produit dissociatif, ayant des effets
-              à la fois anesthésiant et hallucinogène
-            </p>
-          </div>
+    </div>
+  </nav>
+<br>
+   <!-----------------------------Lets try to put some presentation preview---------------------------------------->
+   <center><h1><strong>SUBSTANCES</strong></h1></center>
+
+   <center><h4 class="preztext">De nombreuses substances psychotropes peuvent altérer la pensée et le jugement d'une personne et entraîner des risques pour la santé, notamment la dépendance, la conduite en état d'ébriété, les maladies infectieuses et les effets indésirables sur la grossesse. Vous trouverez ici des informations sur les drogues et médicaments les plus courants susceptibles d'entraîner un mauvais usage ou une dépendance.</h4>
+   </center>
+   <br>
+   <hr style="width:75% ;margin: auto; color: black;" />
+   <br>
+<!-----------------------------Now a research bar on the left and a filter on the right--------------------------------------->
+<!-----------------------------The filter should be checkboxes, and inside a hiddable button if possible---------------------------------------->
+<div class="search_for_a_substance_with_filters">
+
+  <center> <div id="search_for_a_substance" class="btn-group" > 
+    <form class="d-flex">
+      <input style="border-color:black" class="form-control me-sm-2" type="text"  id="Text_Filter" placeholder="Chercher une Substance... " onkeyup="Search_Drug()">
+    </form>
+  </div></center>
+  
+<center>
+<div class="filtres">
+<br>
+
+  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filtrer par Effets</button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Stimulant
+          </label>
         </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Neuroleptique
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Hallucinogène
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Dépresseur
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Dissociatif
+          </label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Psychédélique
+          </label>
+        </div>
+
       </div>
-      <div class="col mb-4">
-        <div class="card">
-          <img
-            src="https://dummyimage.com/600x400/000/fff.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a longer card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
+
+  </div>
+
+ <br>
+  
+
+</div>
+</center>
+
+</div>
+
+</div>
+
+
+<!-----------------------------Lets put a sparation line and start to put the substances cards---------------------------------------->
+<br>
+<hr style="width:75% ;margin: auto; color: black;" />
+<br>
+<!-----------------------------Lets try to put some article preview---------------------------------------->
+   <div ID= "Drug_Grid" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+     
+
+     <div id="A" class="col mb-4">
+       <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+         <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Anti Dépresseurs Tricycliques</h4>
+           <h5><span class="badge bg-primary">Stimulant</span> </h5>
+           <a href="./ADTc.html"></a><button class="btn btn-white" type="button">Button</button>          
           </div>
+       </div>
+     </div>
+
+     <div class="col mb-4">
+      <div class="card">
+       <img src="./assets/ayahuasca-banisteriopsis-600x600p.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Ayahuasca</h4>
+          <h5><span class="badge bg-success">Hallucinogène</span> </h5>
+         <a href="./Ayahuasca.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
         </div>
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://jacoblett.github.io/bootstrap4-latest/bootstrap-4-latest.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <div id="B" class="col mb-4">
+      <div class="card">
+       <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Barbituriques</h4>
+          <h5><span class="badge bg-danger">Depresseur</span> </h5>
+           <a href="./Barbituriques.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+          </a></center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+     <div id="C" class="col mb-4">
+       <div class="card" >
+        <img src="./assets/Cocaine.JPG" class="card-img-top" alt="...">
+         <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Cocaïne</h4>
+           <h5><span class="badge bg-primary">Stimulant</span> </h5>
+           <a href="./Cocaine.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+         </a></center> <h1></h1>
+         </div>
+       </div>
+     </div>
+
+     <div id="D" class="col mb-4">
+       <div class="card">
+        <img src="./assets/DMT.jpg" class="card-img-top" alt="...">
+         <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">DMT</h4>
+           <h5><span class="badge bg-primary">Stimulant</span> <span class="badge bg-success">Hallucinogène</span> <span class="badge bg-dark">Psychédelique</span> </h5>
+             <a href="./DMT.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+       </div>
+     </div>
+
+     <div id="E" class="col mb-4">
+       <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+         <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Ephédrine</h4>
+           <h5><span class="badge bg-primary">Stimulant</span> </h5>
+             <a href="./Ephedrine.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+       </div>
+     </div>
+
+     <div class="col mb-4">
+       <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+         <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Ethanol</h4>
+           <h5><span class="badge bg-danger">Depresseur</span> </h5>
+             <a href="./Ethanol.html"></a><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark" >Plus d'infos</button>
+          </a></center> <h1></h1>
+        </div>
+       </div>
+     </div>
+
+     <div id="F" class="col mb-4">
+      <div class="card">
+       <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Fentanyl</h4>
+          <h5><span class="badge bg-danger">Depresseur</span> </h5>
+         <a href="./Fentanyl.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+     <div class="col mb-4">
+       <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+         <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Fluoxétine</h4>
+           <h5><span class="badge bg-primary">Stimulant</span>
+           <span class="badge bg-warning">Neuroleptique</span> </h5>
+             <a href="./Fluoxetine.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+       </div>
+     </div>
+
+     <div id="G" class="col mb-4">
+       <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+         <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">GBL</h4>
+           <h5><span class="badge bg-danger">Depresseur</span>
+           <span class="badge bg-info">Dissociatif</span> </h5>
+             <a href="./GBL.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+       </div>
+     </div>
+
+     <div class="col mb-4">
+       <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+         <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">GHB</h4>
+           <h5><span class="badge bg-danger">Depresseur</span>
+           <span class="badge bg-info">Dissociatif</span> </h5>
+             <a href="./GHB.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+       </div>
+     </div>
+
+     <div id="H" class="col mb-4">
+       <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+         <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Héroïne</h4>
+           <h5><span class="badge bg-danger">Depresseur</span> </h5>
+             <a href="./Heroine.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+       </div>
+     </div>
+
+    <div id="K" class="col mb-4">
+      <div class="card">
+        <img src="./assets/kétamine_logo.jpg" class="card-img-top" alt="..."></a>
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Kétamine</h4>
+          <h5><span class="badge bg-danger">Dépresseur</span>
+          <span class="badge bg-success">Hallucinogène</span> 
+          <span class="badge bg-info">Dissociatif</span> </h5>
+          <a href="./Ketamine.html"></a><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+          </a></center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="L" class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="..."></a>
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">LSD</h4>
+          <h5><span class="badge bg-success">Hallucinogène</span>
+          <span class="badge bg-primary">Stimulant</span> </h5>
+         <a href="./LSD.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="M" class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="..."></a>
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">MDMA</h4>
+          <h5><span class="badge bg-dark">Psychédelique</span>
+          <span class="badge bg-primary">Stimulant</span> </h5>
+         <a href="./MDMA.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card">
+       <a href="./Mephedrone.html"><img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="..."></a>
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Méphédrone</h4>
+          <h5><span class="badge bg-danger">Dépresseur</span> </h5>
+         <a href="./Mephedrone.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card">
+       <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="..."></a>
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Méscaline</h4>
+          <h5><span class="badge bg-success">Hallucinogène</span>
+          <span class="badge bg-primary">Stimulant</span> </h5>
+         <a href="./Mescaline.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="..."></a>
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Méthadone</h4>
+          <h5><span class="badge bg-warning">Depresseur</span> </h5>
+         <a href="./Methadone.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Méthamphétamine</h4>
+          <h5><span class="badge bg-primary">Stimulant</span> </h5>
+         <a href="./Methamphetamine.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Morphine</h4>
+          <h5><span class="badge bg-warning">Depresseur</span> </h5>
+         <a href="./Morphine.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a> </center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="N" class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Nicotine</h4>
+          <h5><span class="badge bg-primary">Stimulant</span>
+          <span class="badge bg-danger">Depresseur</span>
+          <span class="badge bg-warning">Neuroleptique</span> </h5>
+         <a href="./Nicotine.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a> </center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="O" class="col mb-4">
+      <div class="card">
+       <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Oxycodne</h4>
+          <h5><span class="badge bg-danger">Depresseur</span> </h5>
+         <a href="./Oxycodone.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="P" class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Phencyclidine (PCP) </h4>
+          <h5><span class="badge bg-success">Hallucinogène</span>
+          <span class="badge bg-info">Dissociatif</span>
+          <span class="badge bg-danger">Depresseur</span> </h5>
+         <a href="./PCP.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Poppers</h4>
+          <h5><span class="badge bg-success">Hallucinogène</span>
+          <span class="badge bg-info">Dissociatif</span> 
+          <span class="badge bg-danger">Depresseur</span> </h5>
+
+         <a href="./Poppers.html"></a> <button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a> </center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card">
+      <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Protoxyde d'Azote</h4>
+          <h5><span class="badge bg-success">Hallucinogène</span>
+          <span class="badge bg-info">Dissociatif</span> 
+          <span class="badge bg-danger">Depresseur</span></h5>
+         <a href="./Proto.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a>
+        </center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Psilocybine</h4>
+          <h5><span class="badge bg-success">Hallucinogène</span>
+          <span class="badge bg-primary">Stimulant</span> </h5>
+         <a href="./Psilocybine.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a>
+        </center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="S" class="col mb-4">
+      <div class="card">
+      <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Salvia Divinorum</h4>
+          <h5><span class="badge bg-success">Hallucinogène</span> </h5>
+         <a href="./Salvia_Divinorium.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a>
+        </center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Solanacées</h4>
+          <h5><span class="badge bg-primary">Stimulant</span> </h5>
+         <a href="./Solanacees.html"> <button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Speed</h4>
+          <h5><span class="badge bg-primary">Stimulant</span>
+          <span class="badge bg-dark">Psychedelique</span> </h5>
+           <a href="./Speed.html"></a><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+         </a> 
+          </center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="T" class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">THC</h4>
+          <h5><span class="badge bg-danger">Depresseur</span>
+          <span class="badge bg-success">Hallucinogène</span> </h5>
+           <a href="./THC.html"> <button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+         </a> </center> <h1></h1>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Tramadol</h4>
+          <h5><span class="badge bg-danger">Depresseur</span> </h5>
+           <a href="./Tramadol.html"> <button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+         </a> </center> <h1></h1>
+        </div>
+      </div>
+    </div> 
+    
+
+    <div id="V" class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Venlafaxine</h4>
+          <h5><span class="badge bg-danger">Depresseur</span>
+          <span class="badge bg-warning">Neuroleptique</span> </h5>
+           <a href="./Venlafaxine.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+          </a>
+          </center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="X" class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Xanax (Alprazolam)</h4>
+          <h5><span class="badge bg-danger">Depresseur</span>
+          <span class="badge bg-warning">Neuroleptique</span> </h5>
+           <a href="./Xanax.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+          </a>
+          </center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="Y" class="col mb-4">
+      <div class="card">
+       <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">Yohimbine</h4>
+          <h5><span class="badge bg-primary">Stimulant</span> </h5>
+         <a href="./Yohimbine.html" <button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+         </a>
+        </center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="numbered_substance" class="col mb-4">
+      <div class="card">
+        <img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="...">
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">2-CB</h4>
+          <h5><span class="badge bg-primary">Stimulant</span>
+          <span class="badge bg-dark">Psychedelique</span> </h5>
+         <a href=".//2_CB.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+        </a></center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="numbered_substance" class="col mb-4">
+      <div class="card"><img src="https://dummyimage.com/600x400/000/fff.jpg" class="card-img-top" alt="..."></a>
+        <div class="card_body" style="background-color: black; color:aliceblue">
+          <center><h4 class="card_title">3-MMC</h4>
+          <h5><span class="badge bg-primary">Stimulant</span>
+          <span class="badge bg-dark">Psychedelique</span> </h5>
+           <button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+          </center> <h1></h1>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+   
+ 
+   <script src="./filter_by_text.js"></script>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+   <script src="https://jacoblett.github.io/bootstrap4-latest/bootstrap-4-latest.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
 </html>
+
