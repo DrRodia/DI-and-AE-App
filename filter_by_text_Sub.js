@@ -1,10 +1,12 @@
-function Search_Drug() {
+function Search_Article() {
 
 const input =document.getElementById('Text_Filter').value.toUpperCase();
 
-const cardContainer = document.getElementById('Drug_Grid')
+const cardContainer = document.getElementById('Grid')
 
 const cards = cardContainer.getElementsByClassName('col mb-4')
+
+console.log(cards)
 
 for(let i=0; 1< cards.length;i++){
     let card_title = cards[i].querySelector(".card_body .card_title")
