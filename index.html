@@ -4,22 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/tox logo 96.png" />
+    <link rel="shortcut icon" href="./assets/NIZ_LOGO_TAB.jpg" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
+    <!-----------------------Let's set the styles--------------------->
+    <style>
+.how-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.how-section1 h4{
+    color: blue;
+    font-weight: bold;
+    font-size: 25px;
+}
+.how-section1 .subheading{
+    color:black;
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 5%;
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 50%;
+}
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border-width: 0.1rem;
+    border-color: grey;
+    outline: none;
+    background-color:transparent;
+    color: lightgrey;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 100%;
+  }
+  
+  #myBtn:hover {
+    background-color: black;
+    border-width: 0.1rem;
+    border-color: white;
+    color: white;
+  }
+    </style>
+
+
     <title>NIZ</title>
   </head>
-  <body>
+  <body style="font-family:Tw Cen MT Condensed;">
     <!-----------------------Let's set the Navbar--------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html"
-          >Narcotic Instructed Zombie</a
-        >
+          ><img src="./assets/NIZ_LOGO.jpg" alt=""></a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -27,27 +87,27 @@
           data-bs-target="#navbarColor02"
           aria-controls="navbarColor02"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
+
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor02">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" href="./Substances.html">Substances</a>
+              <a class="nav-link" href="./Substances.html"><h4> Substances </h4></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./Physio.html">Physiologie</a>
+              <a class="nav-link" href="./Physio.html"><h4>Physiologie </h4></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Interactions</a>
+              <a class="nav-link" href=""><h4>Interactions </h4></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./secourisme.html">Secourisme - RDR - Sevrage</a>
+              <a class="nav-link" href="./secourisme.html"><h4>Secourisme - RDR - Sevrage </h4></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Urgences</a>
+              <a class="nav-link" href="#"><h4>Contacts</h4></a>
             </li>
           </ul>
           <form class="d-flex">
@@ -64,27 +124,90 @@
       </div>
     </nav>
 
-    <!---------------------Now let's set a text intro--------------------->
-    <br />
+    <!---------------------Now let's set a text intro: Citation --------------------->
+<center><h1 style="color:black ;"><strong>Narcotic Instructed Zombies </strong></h1></center>
+<br>
+    <!------------------------------------try and put some carroousel here---------------------------------->
+<br>
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="./assets/DRUG_ICONS.jpg" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>SUBSTANCES</h4></center>
+                          <h4 class="subheading">Des questions sur des substances psychotropes?</h4>
+          <p class="text-muted">Freedom to work on ideal projects. On GetLance, you run your own business and choose your own clients and projects. Just complete your profile and we’ll highlight ideal jobs. Also search projects, and respond to client invitations.
+                              Wide variety and high pay. Clients are now posting jobs in hundreds of skill categories, paying top price for great work.
+                              More and more success. The greater the success you have on projects, the more likely you are to get hired by clients that use GetLance.</p>
+                              <center> <a href="./Substances.html"><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                              </a>
+                            </center>
+                            </div>
+      </div>
 
-    <br />
 
-    <figure class="text-center">
-      <blockquote class="blockquote">
-        <p class="mb-0">
-          <strong
-            ><em>
-              Tout est poison et rien n'est sans poison. <br />
-              La dose seule fait que quelque chose n'est pas un poison.</em
-            ></strong
-          >
-        </p>
-      </blockquote>
-      <figcaption class="blockquote-footer">
-        <cite title="Source Title"><strong></strong></cite>
-      </figcaption>
-    </figure>
+      <div class="row">
+          <div class="col-md-6">
+            <center><h4>PHYSIOLOGIE</h4></center>
+              
+                          <h4 class="subheading">Envie d'en apprendre davantage sur le corps humain et son fonctionnement?</h4>
+                          <p class="text-muted">Streamlined hiring. GetLance’s sophisticated algorithms highlight projects you’re a great fit for.
+                              Top Rated and Rising Talent programs. Enjoy higher visibility with the added status of prestigious programs.
+                              Do substantial work with top clients. GetLance pricing encourages freelancers to use GetLance for repeat relationships with their clients.</p>
+                              <center> <a href="./Physio.html"><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                              </a>
+                            </center>
+                            </div>
+          <div class="col-md-6 how-img">
+              <img src="./assets/PHYSIO_ICON_BW.png" class="rounded img-fluid" alt=""/>
+          </div>
+      </div>
 
+
+      <div class="row">
+          <div class="col-md-6 how-img">
+               <img src="./assets/Rod_of_Asclepius.png" class="rounded-circle img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>SECOURISME - RDR - SEVRAGE</h4></center>
+              
+                          <h4 class="subheading">Des questions concernant des symptômes? Les gestes de premiers secours? La Réduction Des Risques ou le Sevrage?</h4>
+                          <p class="text-muted">Send and receive files. Deliver digital assets in a secure environment.
+                              Share feedback in real time. Use GetLance Messages to communicate via text, chat, or video.
+                              Use our mobile app. Many features can be accessed on your mobile phone when on the go.</p>
+                              <center> <a href="./Secourisme.html"><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                              </a>
+                            </center>
+            </div>
+      </div>
+
+
+      <div class="row">
+          <div class="col-md-6">
+            <center><h4>CONTACTS</h4></center>  
+                          <h4 class="subheading">Besoin d'un interlocuteur?</h4>
+                          <p class="text-muted">All invoices and payments happen through GetLance. Count on a simple and streamlined process.
+                              Hourly and fixed-price projects. For hourly work, submit timesheets through GetLance. For fixed-price jobs, set milestones and funds are released via GetLance escrow features.
+                              Multiple payment options. Choose a payment method that works best for you, from direct deposit or PayPal to wire transfer and more.</p>
+                             <center> <a href=""><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                              </a>
+                            </center>
+                            </div>
+          <div class="col-md-6 how-img">
+              <img src="./assets/CONTACT_LOGO.png" class="rounded img-fluid" alt=""/>
+          </div>
+      </div>
+  </div>
+
+ <!---------------------------------------- Add a scroll to top button---------------------------------------------------->
+  
+ <div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><strong>TOP</strong></button>
+</div> 
+
+   <!---------------------End of document--------------------->
+   <script src="./Scroll_to_Top.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
