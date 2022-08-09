@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/tox logo 96.png">
-    <link rel="stylesheet" href="/bootstrap.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -13,7 +12,7 @@
 
   
 </head>
-<body>
+<body style="font-family:Tw Cen MT Condensed;">
                    <!-----------------------Let's set the Navbar--------------------->
                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div class="container-fluid">
@@ -48,7 +47,7 @@
                     </div>
                   </nav>
 <!------------------------------------------Let's set a Title---------------------------------------------------->
-<div style="margin: rem ;
+<div style="margin: rem ; font-family:Tw Cen MT Condensed ;
 ">  
 <center><h1><strong>XXXXXXXXXXXXXX
   </strong></h1>
@@ -59,7 +58,8 @@
   <!--Mettre un gros bouton LEGAL en vert ou ILLEGAL en touge SUR PRESCRIPTION en bleu------------------>
 
   <!------------------------Then let's put a navigation to subset the different parts---------------------------->
-  <div style="margin: 1rem;">
+  <center>
+  <div style="margin: 1rem; font-family: Tw Cen MT Condensed;">
   <center><ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" id="pills-physio-tab" data-toggle="pill" href="#Generalite" role="tab" aria-controls="pills-home-tab" aria-selected="true">GENERALITES</a>
@@ -74,7 +74,7 @@
       <a class="nav-link" id="pills-physio-tab" data-toggle="pill" href="#Galenique" role="tab" aria-controls="pills-home-tab" aria-selected="true">GALENIQUE</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Mode_de_Consommation" role="tab" aria-controls="pills-profile-tab" aria-selected="false">MODE DE CONSOMMATION</a>
+      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Testing" role="tab" aria-controls="pills-profile-tab" aria-selected="false">TESTING</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#DT" role="tab" aria-controls="pills-profile-tab" aria-selected="false">DOSAGE ET TOXICOCINETIQUE</a>
@@ -91,8 +91,9 @@
   </ul>
   </center>
  </div>
+</center>
 
-<div id="myTabContent" class="tab-content" style="margin: 1rem;">
+<div id="myTabContent" class="tab-content" style="margin: 1rem; font-family: Tw Cen MT Condensed;">
   <!---------------------------------------- Généralités part---------------------------------------------------->
   <div class="tab-pane fade show active" id="Generalite">
     <h2><strong>Généralités</strong></h2>
@@ -162,7 +163,8 @@
     <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
   </div>
   <!---------------------------------------- Mode de Consommation part---------------------------------------------------->
-  <div class="tab-pane fade" id="Mode_de_Consommation">
+  <div class="tab-pane fade" id="Testing">
+    <h1><strong>Testing</strong></h1>
     <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
   </div>
 <!---------------------------------------- Dosage et Cinétique part---------------------------------------------------->
@@ -177,7 +179,7 @@
                         <div class="alert alert-dismissible alert-danger">
                          <strong> <h5 class="alert-heading">Attention !</h5> </strong>
                           <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                          Les doses et durées sont données à <strong> titre indicatifs </strong> et sont sujets à de <strong> fortes variations intra et inter-individuelles ! </strong>
+                          Les doses et durées sont données à titre <strong> indicatif </strong> et sont sujets à de <strong> fortes variations intra et inter-individuelles ! </strong>
                         </div>
 
                         <div class="accordion-item">
@@ -195,22 +197,27 @@
                                 <div class="progress">
                                   <div class="progress-bar bg-info" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
+                                <center>
                                 <p class="dosebartext"><strong>Dose Faible:</strong> X à X mg</p> 
-                            
+                                </center>
                                 <div class="progress">
                                   <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
+                                <center>
                                 <p class="dosebartext"><strong>Dose Moyenne:</strong> X à X mg</p>
-                            
+                                </center>
                                 <div class="progress">
                                   <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
+                                <center>
                                 <p class="dosebartext"><strong>Dose Forte:</strong> X à X mg</p>
-                            
+                               </center>
                                 <div class="progress">
-                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                  <div class="progress-bar bg-dark" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
+                                <center>
                                 <p class="dosebartext"><strong>Dose Toxique:</strong> X à X mg</p> <br>
+                               </center>
                                 <p><em>Au delas de cette dose...</em></p>
                             
                               </div>
@@ -311,12 +318,8 @@
   </div>
 
 </div>
-
-  <!---------------------------------------------- Art part------------------------------------------------------->
-  <div class="tab-pane fade" id="Art">
-    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-  </div>
-
+ <!---------------------------------------- Endo of tap part------------------------------------------------------->
+  
 </div>
 
 <!---------------------------------------- XXXXXXX SCRIPTS XXXX---------------------------------------------------->
