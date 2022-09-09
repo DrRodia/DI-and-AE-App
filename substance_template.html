@@ -9,6 +9,134 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <title>NIZ</title>
+    <style>
+      section#timeline {
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+}
+section#timeline:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 -1px;
+  width: 2px;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+}
+section#timeline article {
+  width: 100%;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+section#timeline article:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+section#timeline article div.inner {
+  width: 40%;
+  float: left;
+  margin: 5px 0 0 0;
+  border-radius: 6px;
+}
+section#timeline article div.inner span.date {
+  display: block;
+  width: 60px;
+  height: 50px;
+  padding: 5px 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -32px;
+  border-radius: 100%;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #25303B;
+  color: rgba(255,255,255,0.5);
+  border: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 0 0 7px #25303B;
+}
+section#timeline article div.inner span.date span {
+  display: block;
+  text-align: center;
+}
+section#timeline article div.inner span.date span.day {
+  font-size: 10px;
+}
+section#timeline article div.inner span.date span.month {
+  font-size: 18px;
+}
+section#timeline article div.inner span.date span.year {
+  font-size: 10px;
+}
+section#timeline article div.inner h2 {
+  padding: 15px;
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+}
+section#timeline article div.inner h2:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -5px;
+  	width: 10px; 
+	  height: 10px;
+  -webkit-transform: rotate(-45deg);
+}
+section#timeline article div.inner p {
+  padding: 15px;
+  margin: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #656565;
+  border-radius: 0 0 6px 6px;
+}
+section#timeline article:nth-child(2n+2) div.inner {
+  float: right;
+}
+section#timeline article:nth-child(2n+2) div.inner h2:after {
+  left: -5px;
+}
+section#timeline article:nth-child(1) div.inner h2 {
+  background: #e74c3c;
+}
+section#timeline article:nth-child(1) div.inner h2:after {
+  background: #e74c3c;
+}
+section#timeline article:nth-child(2) div.inner h2 {
+  background: #2ecc71;
+}
+section#timeline article:nth-child(2) div.inner h2:after {
+  background: #2ecc71;
+}
+section#timeline article:nth-child(3) div.inner h2 {
+  background: #e67e22;
+}
+section#timeline article:nth-child(3) div.inner h2:after {
+  background: #e67e22;
+}
+section#timeline article:nth-child(4) div.inner h2 {
+  background: #1abc9c;
+}
+section#timeline article:nth-child(4) div.inner h2:after {
+  background: #1abc9c;
+}
+section#timeline article:nth-child(5) div.inner h2 {
+  background: #9b59b6;
+}
+section#timeline article:nth-child(5) div.inner h2:after {
+  background: #9b59b6;
+}
+    </style>
 
   
 </head>
@@ -47,6 +175,9 @@
           <a class="nav-link" href="./Physio.html"><h4>Physiologie </h4></a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="./Physio.html"><h4>Testing</h4></a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#"><h4>Contacts</h4></a>
         </li>
       </ul>
@@ -82,16 +213,13 @@
       <a class="nav-link active" id="pills-physio-tab" data-toggle="pill" href="#Generalite" role="tab" aria-controls="pills-home-tab" aria-selected="true">GENERALITES</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Epidemiologie" role="tab" aria-controls="pills-profile-tab" aria-selected="false">EPIDEMIOLOGIE</a>
+      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Epidemiologie" role="tab" aria-controls="pills-profile-tab" aria-selected="false">PRODUCTION-TRAFFIC-CONSOMMATION</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Pharmacologie" role="tab" aria-controls="pills-profile-tab" aria-selected="false">PHARMACOLOGIE</a>
+      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Pharmacologie" role="tab" aria-controls="pills-profile-tab" aria-selected="false">PHARMACOCHIMIE</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" id="pills-physio-tab" data-toggle="pill" href="#Galenique" role="tab" aria-controls="pills-home-tab" aria-selected="true">GALENIQUE</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Testing" role="tab" aria-controls="pills-profile-tab" aria-selected="false">TESTING</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#DT" role="tab" aria-controls="pills-profile-tab" aria-selected="false">DOSAGE - CINETIQUE - DEPISTAGE</a>
@@ -100,11 +228,9 @@
       <a class="nav-link" id="pills-physio-tab" data-toggle="pill" href="#Effets" role="tab" aria-controls="pills-home-tab" aria-selected="true">EFFETS</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Interactions" role="tab" aria-controls="pills-profile-tab" aria-selected="false">INTERACTIONS</a>
+      <a class="nav-link" id="pills-physio-tab" data-toggle="pill" href="#Effets_Toxiques" role="tab" aria-controls="pills-home-tab" aria-selected="true">EFFETS SECONDAIRES ET TOXIQUES</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Safe_Use" role="tab" aria-controls="pills-profile-tab" aria-selected="false">SAFE USE</a>
-    </li>
+
   </ul>
   </center>
  </div>
@@ -114,11 +240,86 @@
   <!---------------------------------------- Généralités part---------------------------------------------------->
   <div class="tab-pane fade show active" id="Generalite">
     <h2><strong>Généralités</strong></h2>
+
+    <section id="timeline">
+      <article>
+        <div class="inner">
+          <span class="date">
+            <span class="day">30<sup>th</sup></span>
+            <span class="month">Jan</span>
+            <span class="year">2014</span>
+          </span>
+          <h2>XXXXXXXXXx</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+        </div>
+      </article>
+
+      <article>
+        <div class="inner">
+          <span class="date">
+            <span class="day">26<sup>th</sup></span>
+            <span class="month">Jan</span>
+            <span class="year">2014</span>
+          </span>
+          <h2>XXXXXXXXXX</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+        </div>
+      </article>
+
+      <article>
+        <div class="inner">
+          <span class="date">
+            <span class="day">26<sup>th</sup></span>
+            <span class="month">Jan</span>
+            <span class="year">2014</span>
+          </span>
+          <h2>XXXXXXXXXXX</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+        </div>
+      </article>
+
+      <article>
+        <div class="inner">
+          <span class="date">
+            <span class="day">26<sup>th</sup></span>
+            <span class="month">Jan</span>
+            <span class="year">2014</span>
+          </span>
+          <h2>XXXXXXXXX</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+        </div>
+      </article>
+
+      <article>
+        <div class="inner">
+          <span class="date">
+            <span class="day">26<sup>th</sup></span>
+            <span class="month">Jan</span>
+            <span class="year">2014</span>
+          </span>
+          <h2>XXXXXXXXXX</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+        </div>
+      </article>
+    </section>
+
+
+
+    
+  </div>
+
+  <!---------------------------------------- Epidémio part---------------------------------------------------->
+  
+  <div class="tab-pane fade" id="Epidemiologie">
+    <h2><strong>PRODUCTION TRAFFIC ET CONSOMMATION</strong></h2>
+
+    <p>Quelques chiffres clés..... <i>Texte d'intro</i></p>
+
     <div class="accordion" id="accordionExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            Histoire et Découverte
+           <strong>PRODUCTION</strong>
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -131,7 +332,7 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingTwo">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Utilisations
+          <strong>RESEAUX ET TRAFFIC</strong>
           </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -144,7 +345,7 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Chimie
+          <strong>CHIFFRE D'AFFAIRE ET CONSOMMATION</strong>
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -157,16 +358,6 @@
 
 
     </div>
-  </div>
-
-  <!---------------------------------------- Epidémio part---------------------------------------------------->
-  
-  <div class="tab-pane fade" id="Epidemiologie">
-    <h2><strong>Epidémiologie</strong></h2>
-
-    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-  
-  
     
   
   
@@ -320,69 +511,23 @@
                       
                     </div>
   <!---------------------------------------- Effects part---------------------------------------------------->
-                    <!--Let's put an accordion inside, to split it into 3 parts-->
+                
   <div class="tab-pane fade" id="Effets">
     
     <!--Maybe it would be good to add a title + some labls with the type of drug, on top of the accordion-->
    
-<h2><img src="./assets/Capture d’écran 2022-09-04 194146.png" width="6%"><strong>Effets</strong></h2>
+<h2><strong>Effets</strong></h2>
 
     
-    <div class="accordion" id="accordionExample">
+  </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            <strong>Effets Recherchés</strong>
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <strong>Effets Secondaires</strong>
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            <strong>Effets Toxiques</strong>
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-          </div>
-        </div>
-      </div>
+    <!---------------------------------------- Effets Toxiques part---------------------------------------------------->
+                    
+    <div class="tab-pane fade" id="Effets_Toxiques">
+    <h2><strong>Effets Secondaires et Toxiques</strong></h2>
+                      
     </div>
-    
-  </div>
-  
-  <!---------------------------------------- Interaction part---------------------------------------------------->
-  
-  <div class="tab-pane fade" id="Interactions">
-    <h2><strong>Interactions</strong></h2>
-    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-  </div>
 
-  <!---------------------------------------- Safe Use part------------------------------------------------------->
-  <div class="tab-pane fade" id="Safe_Use">
-    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
-  </div>
 
 </div>
  <!---------------------------------------- End of tap part------------------------------------------------------->
