@@ -10,7 +10,7 @@
 
     <title>NIZ</title>
     <style>
-      section#timeline {
+section#timeline {
   width: 80%;
   margin: 20px auto;
   position: relative;
@@ -24,7 +24,7 @@ section#timeline:before {
   margin: 0 0 0 -1px;
   width: 2px;
   height: 100%;
-  background: rgba(255,255,255,0.2);
+  background: blue;
 }
 section#timeline article {
   width: 100%;
@@ -44,40 +44,40 @@ section#timeline article div.inner {
 }
 section#timeline article div.inner span.date {
   display: block;
-  width: 60px;
-  height: 50px;
-  padding: 5px 0;
+  width: 65px;
+  height: 65px;
+  padding: 1px 0;
   position: absolute;
   top: 0;
   left: 50%;
   margin: 0 0 0 -32px;
   border-radius: 100%;
-  font-size: 12px;
-  font-weight: 900;
+  font-size: 20px;
+  font-weight: 1000;
   text-transform: uppercase;
-  background: #25303B;
-  color: rgba(255,255,255,0.5);
-  border: 2px solid rgba(255,255,255,0.2);
-  box-shadow: 0 0 0 7px #25303B;
+  background:black;
+  color: white;
+  border: none;
+  box-shadow: 0 0 0 7px black;
 }
 section#timeline article div.inner span.date span {
   display: block;
   text-align: center;
 }
 section#timeline article div.inner span.date span.day {
-  font-size: 10px;
+  font-size: 12px;
 }
 section#timeline article div.inner span.date span.month {
   font-size: 18px;
 }
 section#timeline article div.inner span.date span.year {
-  font-size: 10px;
+  font-size: 12px;
 }
 section#timeline article div.inner h2 {
   padding: 15px;
   margin: 0;
-  color: #fff;
-  font-size: 20px;
+  color: white;
+  font-size: 25px;
   text-transform: uppercase;
   letter-spacing: -1px;
   border-radius: 6px 6px 0 0;
@@ -95,10 +95,11 @@ section#timeline article div.inner h2:after {
 section#timeline article div.inner p {
   padding: 15px;
   margin: 0;
-  font-size: 14px;
+  font-size: 17px;
   background: #fff;
-  color: #656565;
+  color: black;
   border-radius: 0 0 6px 6px;
+
 }
 section#timeline article:nth-child(2n+2) div.inner {
   float: right;
@@ -107,34 +108,62 @@ section#timeline article:nth-child(2n+2) div.inner h2:after {
   left: -5px;
 }
 section#timeline article:nth-child(1) div.inner h2 {
-  background: #e74c3c;
+  background:blue;
 }
 section#timeline article:nth-child(1) div.inner h2:after {
-  background: #e74c3c;
+  background: blue;
 }
 section#timeline article:nth-child(2) div.inner h2 {
-  background: #2ecc71;
+  background: blue;
 }
 section#timeline article:nth-child(2) div.inner h2:after {
-  background: #2ecc71;
+  background: blue;
 }
 section#timeline article:nth-child(3) div.inner h2 {
-  background: #e67e22;
+  background: blue;
 }
 section#timeline article:nth-child(3) div.inner h2:after {
-  background: #e67e22;
+  background: blue;
 }
 section#timeline article:nth-child(4) div.inner h2 {
-  background: #1abc9c;
+  background: blue;
 }
 section#timeline article:nth-child(4) div.inner h2:after {
-  background: #1abc9c;
+  background: blue;
 }
 section#timeline article:nth-child(5) div.inner h2 {
-  background: #9b59b6;
+  background: blue;
 }
 section#timeline article:nth-child(5) div.inner h2:after {
-  background: #9b59b6;
+  background: blue;
+}
+
+
+
+
+.how-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.how-section1 h4{
+    color: blue;
+    font-weight: bold;
+    font-size: 25px;
+}
+.how-section1 .subheading{
+    color:black;
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 5%;
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 50%;
 }
     </style>
 
@@ -324,7 +353,59 @@ section#timeline article:nth-child(5) div.inner h2:after {
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          
+            <section id="timeline">
+              <article>
+                <div class="inner">
+                  <span class="date">
+                    <span class="month"><strong>I</strong></span>
+                  </span>
+                  <h2>XXXXXXXXXx</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+                </div>
+              </article>
+        
+              <article>
+                <div class="inner">
+                  <span class="date">
+                    <span class="month"><strong>II</strong></span>
+                  </span>
+                  <h2>XXXXXXXXXX</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+                </div>
+              </article>
+        
+              <article>
+                <div class="inner">
+                  <span class="date">
+                    <span class="month"><strong>III</strong></span>
+                  </span>
+                  <h2>XXXXXXXXXXX</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+                </div>
+              </article>
+        
+              <article>
+                <div class="inner">
+                  <span class="date">
+                    <span class="month"><strong>IV</strong></span>
+                  </span>
+                  <h2>XXXXXXXXX</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+                </div>
+              </article>
+        
+              <article>
+                <div class="inner">
+                  <span class="date">
+                    <span class="month"><strong>V</strong></span>
+                  </span>
+                  <h2>XXXXXXXXXX</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+                </div>
+              </article>
+            </section>
+            
           </div>
         </div>
       </div>
@@ -345,12 +426,83 @@ section#timeline article:nth-child(5) div.inner h2:after {
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <strong>CHIFFRE D'AFFAIRE ET CONSOMMATION</strong>
+          <strong>CONSOMMATION</strong>
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
           <div class="accordion-body">
-            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          
+            <div class="how-section1">
+              <div class="row">
+                  <div class="col-md-6 how-img">
+                      <img src="./assets/homme-femme.png" class="rounded img-fluid" alt=""/>
+                  </div>
+                  <div class="col-md-6">
+                    <center><h4>XXXXXXXX</h4></center>
+                                  <h4 class="subheading">Des questions sur des substances psychotropes?</h4>
+                  <p class="text-muted">Freedom to work on ideal projects. On GetLance, you run your own business and choose your own clients and projects. Just complete your profile and we’ll highlight ideal jobs. Also search projects, and respond to client invitations.
+                                      Wide variety and high pay. Clients are now posting jobs in hundreds of skill categories, paying top price for great work.
+                                      More and more success. The greater the success you have on projects, the more likely you are to get hired by clients that use GetLance.</p>
+                                      
+                                    </div>
+              </div>
+        
+        
+              <div class="row">
+                <div class="col-md-6">
+                  <center><h4>XXXXXXXXXXX</h4></center>  
+                                <h4 class="subheading">Des questions concernant des Symptômes? Les gestes de Premiers Secours? La Réduction Des Risques ou le Sevrage?</h4>
+                                <p class="text-muted">All invoices and payments happen through GetLance. Count on a simple and streamlined process.
+                                    Hourly and fixed-price projects. For hourly work, submit timesheets through GetLance. For fixed-price jobs, set milestones and funds are released via GetLance escrow features.
+                                    Multiple payment options. Choose a payment method that works best for you, from direct deposit or PayPal to wire transfer and more.</p>
+                                   
+                                  </div>
+                <div class="col-md-6 how-img">
+                    <img src="./assets/" class="rounded img-fluid" alt=""/>
+                </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-6 how-img">
+                   <img src="./assets/" class="rounded img-fluid" alt=""/>
+              </div>
+              <div class="col-md-6">
+                <center><h4>XXXXXXXXXXXXX</h4></center>
+                  
+                              <h4 class="subheading">Besoin de connaître les interactions entre deux substances?</h4>
+                              <p class="text-muted">Send and receive files. Deliver digital assets in a secure environment.
+                                  Share feedback in real time. Use GetLance Messages to communicate via text, chat, or video.
+                                  Use our mobile app. Many features can be accessed on your mobile phone when on the go.</p>
+                                  
+                </div>
+          </div>
+    
+    
+          <div class="row">
+            <div class="col-md-6">
+              <center><h4>XXXXXXXXXXx</h4></center>
+                
+                            <h4 class="subheading">Envie d'en apprendre davantage sur le corps humain et son fonctionnement?</h4>
+                            <p class="text-muted">Streamlined hiring. GetLance’s sophisticated algorithms highlight projects you’re a great fit for.
+                                Top Rated and Rising Talent programs. Enjoy higher visibility with the added status of prestigious programs.
+                                Do substantial work with top clients. GetLance pricing encourages freelancers to use GetLance for repeat relationships with their clients.</p>
+                                
+                              </div>
+            <div class="col-md-6 how-img">
+                <img src="./assets/PHYSIO_ICON_BW.png" class="rounded img-fluid" alt=""/>
+            </div>
+        </div>
+
+
+
+
+
+
+
+          </div>
+
+          
           </div>
         </div>
       </div>
