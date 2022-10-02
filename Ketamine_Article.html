@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/NIZ_LOGO_TAB.jpg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>NIZ - Kétamine</title>
+    <style>
+
+
+.how-section1{
+    margin-top:-15%;
+    padding: 7%;
+   
+}
+.how-section1 h4{
+    color: blue;
+    font-weight: bold;
+    font-size: 35px;
+}
+.how-section1 .subheading{
+    color:black;
+    font-size: 30px;
+}
+.how-section1 .row
+{
+    margin-top: 10%;
+    
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 35%;
+}
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    font-family: Tw Cen MT Condensed;
+    border-width: 0.1rem;
+    border-color: grey;
+    outline: none;
+    background-color:transparent;
+    color: lightgrey;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 100%;
+  }
+
+  footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
+  
+  #myBtn:hover {
+    background-color: black;
+    border-width: 0.1rem;
+    border-color: white;
+    color: white;
+  }
+    </style>
+
+  
+</head>
+<body style="font-family:Tw Cen MT Condensed;">
+<!-----------------------Let's set the Navbar--------------------->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html"
+      ><img src="./assets/NIZ_LOGO.jpg" alt=""></a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarColor02"
+      aria-controls="navbarColor02"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./Substances.html"><h4> Substances </h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./secourisme.html"><h4>Secourisme - RDR - Sevrage </h4></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href=""><h4>Interactions </h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Physio.html"><h4>Physiologie </h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./Physio.html"><h4>Testing</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><h4>Contacts</h4></a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input
+          class="form-control me-sm-2"
+          type="text"
+          placeholder="Search"
+        />
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!------------------------------------------Let's set a Title---------------------------------------------------->
+<div style="margin: rem ; font-family:Tw Cen MT Condensed ;
+">  
+<center><h1><strong><strong>KETAMINE</strong>
+  </strong></h1>
+  <h4>
+    <span id="legal_ou_pas" class="badge bg-danger">ILLEGAL</span>
+    <span id="legal_ou_pas" class="badge bg-danger">STUPEFIANT</span>
+    <span id="legal_ou_pas" class="badge bg-info">PREPARATION HOSPITALIÈRE</span>
+    <span id="legal_ou_pas" class="badge bg-info">PREPARATION VETERINAIRE</span></h4></center>
+  </div>
+
+  <p style="padding:2% ;">Depuis sa découverte en 1962, la kétamine s’est imposée comme un précieux anesthésique, en particulier chez les patients à l’hémodynamique instable et dans la population pédiatrique. D’autres indications ont également émergé telles que l’analgésie et le traitement de la dépression. Cependant, sa relative sécurité d’emploi et son effet dissociatif en ont fait une substance attractive en usage récréatif, émergeant peu à peu des milieux techno alternatifs, pour se répandre sur les scènes festives plus commerciales.</p>
+  <!--Mettre un gros bouton LEGAL en vert ou ILLEGAL en touge SUR PRESCRIPTION en bleu------------------>
+
+  <!------------------------Then let's put a navigation to subset the different parts---------------------------->
+  <center>
+  <div style="margin: 1rem; font-family: Tw Cen MT Condensed;">
+  <center><ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="pills-physio-tab" data-toggle="pill" href="#Generalite" role="tab" aria-controls="pills-home-tab" aria-selected="true">GENERALITES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Epidemiologie" role="tab" aria-controls="pills-profile-tab" aria-selected="false">CONSOMMATION-TRAFFIC-PRODUCTION</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Pharmacologie" role="tab" aria-controls="pills-profile-tab" aria-selected="false">PHARMACOCHIMIE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-physio-tab" data-toggle="pill" href="#Galenique" role="tab" aria-controls="pills-home-tab" aria-selected="true">GALENIQUE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#DT" role="tab" aria-controls="pills-profile-tab" aria-selected="false">DOSAGE - CINETIQUE - DEPISTAGE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-physio-tab" data-toggle="pill" href="#Effets" role="tab" aria-controls="pills-home-tab" aria-selected="true">EFFETS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-physio-tab" data-toggle="pill" href="#Effets_Toxiques" role="tab" aria-controls="pills-home-tab" aria-selected="true">EFFETS SECONDAIRES ET TOXIQUES</a>
+    </li>
+
+  </ul>
+  </center>
+ </div>
+</center>
+
+<div id="myTabContent" class="tab-content" style="margin: 1rem; font-family: Tw Cen MT Condensed;">
+  <!---------------------------------------- Généralités part---------------------------------------------------->
+  <div class="tab-pane fade show active" id="Generalite">
+    <h2><strong>Histoire et Généralités</strong></h2>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="./assets/Calvin_Stevens.jpg" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1962</h4></center>
+                          <h4 class="subheading">Synthèse de la Kétamine</h4>
+          <p class="text">A partir de <a href="./PCP_Article.html">PCP</a>, la Kétamine est synthésisée pour la première fois par le <a href="https://en.wikipedia.org/wiki/Calvin_L._Stevens">Dr. Calvin L. STEVENS</a> (1923-2014), Professeur de Chimie Organique à l'Université de Wayne State pour laboratoire Parke-Davis </p>
+                              
+        </div>
+      </div>
+      </div>
+
+    <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="./assets/JacksonPrison.jpg" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1964</h4></center>
+                          <h4 class="subheading">Première Utilisation chez l'Homme</h4>
+          <p class="text">Suite à sa première administration chez l’homme en 1964 à la prison Jackson (Michigan, USA), ses effets <strong>dissociatifs</strong> associés à l’obtention d'une <strong>anesthésie courte sont rapportés</strong>.</p>
+                              
+        </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="./assets/All_rights_reserved_logo.png" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1966</h4></center>
+                          <h4 class="subheading">Depot de brevet</h4>
+          <p class="text">Suite au effets observés lors des essais dans la prison de Jackson, un brevet est déposé pour l'utilisation humaine de la Kétamine</p>
+          <p>Sa faible fréquence d’effets indésirables, associée à l’absence d’émergence de comportement psychotique comparé à la phencyclidine participeront grandement à son implantation dans les protocoles de soins.</p>            
+        </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="./assets/Ketalar.jpg" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1970</h4></center>
+                          <h4 class="subheading">Autorisation de Mise sur le Marché</h4>
+          <p class="text">La <a href="">FDA</a> autorise la mise sur le marché du <strong><a href="https://base-donnees-publique.medicaments.gouv.fr/afficheGroupeGene.php?idGrp=967"></a> Ketalar®</strong>, première préparation de kétamine à usage humain</p>
+          </div>
+    </div>
+    </div>
+
+     <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="./assets/Viet_War.jpg" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1955-1975</h4></center>
+                          <h4 class="subheading">Utilisation militaire</h4>
+          <p class="text">Pendant la guerre du Vietnam, la kétamine était l’analgésique le plus utilisé sur les champs de bataille</p>
+          </div>
+    </div>
+    </div>
+    
+    <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="./assets/Ordo.jpg" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1990</h4></center>
+                          <h4 class="subheading">Alternative aux Opioïdes</h4>
+          <p class="text">La découverte de l’hyperalgie induite par les opioïdes conduit à des changements de pratique, et provoque un regain d’intérêt pour la kétamine dans l’indication analgésique. Ces dernières années, l’utilisation humaine de la kétamine semble également s’orienter dans la prise en charge de la dépression</p>
+          </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="./assets/CAP.jpg" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1992</h4></center>
+                          <h4 class="subheading">Premiers abus</h4>
+          <p class="text">Les premiers abus liés à l'usage de Kétamine sont signalés en France, menant à une surveillance particulière par les autorités sanitaires.</p>
+          </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="./assets/Liste1_Logo.jpg" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1997</h4></center>
+                          <h4 class="subheading">Inscription sur Liste</h4>
+          <p class="text">La kétamine et ses sels sont inscrits sur la liste des stupéfiants, bien que les préparations injectables restent inscrites sur la liste I des substances vénéneuses.</p>
+          </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="./assets/Liste_Stup_Logo.jpg" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>2017</h4></center>
+                          <h4 class="subheading">Classement comme Stupéfiant</h4>
+          <p class="text">Du fait de l’augmentation des cas d’abus à partir de 2002 rapportés par les Centre d’évaluation et d’information sur la Pharmacodépendance, ces préparations injectables de kétamine rejoindront la liste des stupéfiants le 24 avril 2017.</p>
+          </div>
+    </div>
+    </div>
+    
+  <h4> Aujourd’hui, la prescription de kétamine est donc requise <strong>sur ordonnance sécurisée uniquement par des médecins spécialisés en anesthésie-réanimation ou en médecine d’urgence, imposant également la traçabilité des entrées et sorties sur un registre spécial</strong>.</h4>
+
+  </div>
+
+  <!---------------------------------------- Epidémio part---------------------------------------------------->
+  
+  <div class="tab-pane fade" id="Epidemiologie">
+
+  
+   <!------------------------Then let's put a navigation to subset the different parts---------------------------->  
+    <div style="margin:1rem ;display: flex; align-items: center; justify-content: center;">
+      <center>
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                  <a class="nav-link active" id="pills-physio-tab" data-toggle="pill" href="#Epidemio_Sub" role="tab" aria-controls="pills-physio-tab" aria-selected="true">CONSOMMATION</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Traffic" role="tab" aria-controls="pills-tox-tab" aria-selected="false">TRAFFIC</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Production" role="tab" aria-controls="pills-tox-tab" aria-selected="false">PRODUCTION</a>
+                  </li>
+          </ul>       
+      </center>
+    </div>
+
+    <div id="myTabContent" class="tab-content">
+  
+  <!---------------------------------------- EPIDEMIO part---------------------------------------------------->
+    
+  <div class="tab-pane fade show active" id="Epidemio_Sub" style="margin: 1.5rem;">
+    
+    
+      <div>
+          <center>
+              <h2><strong>Epidemiologie</strong></h2>
+              <q> Science qui étudie xxxxxxxxxxx </q>
+          </center>
+    </div>
+    
+    <div>
+
+
+      <div class="how-section1">
+          <div class="row">
+              <div class="col-md-6 how-img">
+                  <img src="./assets/MF.png" class="rounded img-fluid" alt=""/>
+              </div>
+              <div class="col-md-6">
+                <center><h4>SEXE</h4></center>
+                              <h4 class="subheading">XXXXXXXXXXXXYYYYYYYYYYYY</h4>
+              <p class="text-muted">Freedom to work on ideal projects. On GetLance, you run your own business and choose your own clients and projects. Just complete your profile and we’ll highlight ideal jobs. Also search projects, and respond to client invitations.
+                                  Wide variety and high pay. Clients are now posting jobs in hundreds of skill categories, paying top price for great work.
+                                  More and more success. The greater the success you have on projects, the more likely you are to get hired by clients that use GetLance.</p>
+                                  
+                                </div>
+          </div>
+    
+    
+          <div class="row">
+            <div class="col-md-6">
+              <center><h4>AGE</h4></center>  
+                            <h4 class="subheading">XXXXXXXXXXXXXXXXXXXXXXXX</h4>
+                            <p class="text-muted">All invoices and payments happen through GetLance. Count on a simple and streamlined process.
+                                Hourly and fixed-price projects. For hourly work, submit timesheets through GetLance. For fixed-price jobs, set milestones and funds are released via GetLance escrow features.
+                                Multiple payment options. Choose a payment method that works best for you, from direct deposit or PayPal to wire transfer and more.</p>
+                               
+                              </div>
+            <div class="col-md-6 how-img">
+                <img src="./assets/Ages_Logo.png" class="rounded img-fluid" alt=""/>
+            </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-6 how-img">
+               <img src="./assets/Frequency_Logo.png" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>Fréquence de Consommation</h4></center>
+              
+                          <h4 class="subheading">XXXXXXXXXXXXXXXXX</h4>
+                          <p class="text-muted">Send and receive files. Deliver digital assets in a secure environment.
+                              Share feedback in real time. Use GetLance Messages to communicate via text, chat, or video.
+                              Use our mobile app. Many features can be accessed on your mobile phone when on the go.</p>
+                              
+            </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6">
+          <center><h4>Voies d'Administration</h4></center>
+            
+                        <h4 class="subheading">XXXXXXXXXXXXXXXX</h4>
+                        <p class="text-muted">Streamlined hiring. GetLance’s sophisticated algorithms highlight projects you’re a great fit for.
+                            Top Rated and Rising Talent programs. Enjoy higher visibility with the added status of prestigious programs.
+                            Do substantial work with top clients. GetLance pricing encourages freelancers to use GetLance for repeat relationships with their clients.</p>
+                            
+                          </div>
+        <div class="col-md-6 how-img">
+            <img src="./assets/Pie_Chart_Logo.png" class="rounded img-fluid" alt=""/>
+        </div>
+    </div>
+
+
+
+
+    </div>
+  </div>
+  </div>
+
+  <!---------------------------------------- TRAFFIC part---------------------------------------------------->
+  <div class="tab-pane fade" id="Traffic" style="margin: 1.5rem;">
+      
+      <div>
+          <center>
+                  <h2><strong>Traffic</strong></h2>
+                  <q>xxxxxxxxxxxxxxxxxxx</q>
+          </center>
+      </div>
+
+
+      <div>
+
+<p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+          
+
+
+      </div>
+  
+  </div>
+
+  <!---------------------------------------- PRODUCTION part---------------------------------------------------->
+  <div class="tab-pane fade" id="Production" style="margin: 1.5rem;">
+      
+      <div>
+          <center>
+                  <h2><strong>Production</strong></h2>
+                  <q>xxxxxxxxxxxxxxxxxxx</q>
+          </center>
+      </div>
+
+
+      <div>
+
+          <section id="timeline">
+              <article>
+                <div class="inner">
+                  <span class="date">
+                    <span class="month"><strong>I</strong></span>
+                  </span>
+                  <h2>XXXXXXXXXx</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+                </div>
+              </article>
+        
+              <article>
+                <div class="inner">
+                  <span class="date">
+                    <span class="month"><strong>II</strong></span>
+                  </span>
+                  <h2>XXXXXXXXXX</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+                </div>
+              </article>
+        
+              <article>
+                <div class="inner">
+                  <span class="date">
+                    <span class="month"><strong>III</strong></span>
+                  </span>
+                  <h2>XXXXXXXXXXX</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+                </div>
+              </article>
+        
+              <article>
+                <div class="inner">
+                  <span class="date">
+                    <span class="month"><strong>IV</strong></span>
+                  </span>
+                  <h2>XXXXXXXXX</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+                </div>
+              </article>
+        
+              <article>
+                <div class="inner">
+                  <span class="date">
+                    <span class="month"><strong>V</strong></span>
+                  </span>
+                  <h2>XXXXXXXXXX</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue adipiscing, eget commodo libero mattis.</p>
+                </div>
+              </article>
+            </section>
+
+      </div>
+  
+  </div>
+
+
+
+</div>
+  
+  </div>
+  <!---------------------------------------- Pharmacologie part---------------------------------------------------->
+  <div class="tab-pane fade" id="Pharmacologie">
+    <h2><strong>Pharmacologie</strong></h2>
+    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+  </div>
+  <!---------------------------------------- Galénique part---------------------------------------------------->
+  <div class="tab-pane fade" id="Galenique">
+    <h2><strong>Galénique</strong></h2>
+    
+    <div class="how-section1">
+      
+      <!------------BU---------->
+      <div class="row">
+        <div class="col-md-6 how-img">
+            <img src="./assets/Liquor_Icon.png" class="rounded img-fluid" alt=""/>
+        </div>
+        <div class="col-md-6">
+          <center><h4>Bu</h4></center>
+                        <h4 class="subheading">Alcool</h4>
+        <p class="text-muted">Freedom to work on ideal projects. On GetLance, you run your own business and choose your own clients and projects. Just complete your profile and we’ll highlight ideal jobs. Also search projects, and respond to client invitations.
+                            Wide variety and high pay. Clients are now posting jobs in hundreds of skill categories, paying top price for great work.
+                            More and more success. The greater the success you have on projects, the more likely you are to get hired by clients that use GetLance.</p>
+                            <center> <a href="./Substances.html"><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                            </a>
+                          </center>
+                          </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 how-img">
+          <img src="./assets/GHB_Icon.png" class="rounded img-fluid" alt=""/>
+      </div>
+      <div class="col-md-6">
+        <center><h4>Bu</h4></center>
+                      <h4 class="subheading">GHB</h4>
+      <p class="text-muted">Freedom to work on ideal projects. On GetLance, you run your own business and choose your own clients and projects. Just complete your profile and we’ll highlight ideal jobs. Also search projects, and respond to client invitations.
+                          Wide variety and high pay. Clients are now posting jobs in hundreds of skill categories, paying top price for great work.
+                          More and more success. The greater the success you have on projects, the more likely you are to get hired by clients that use GetLance.</p>
+                          <center> <a href="./Substances.html"><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                          </a>
+                        </center>
+                        </div>
+  </div>
+
+  <!------------BU---------->
+    <div class="row">
+      <div class="col-md-6">
+        <center><h4>Buccal</h4></center>  
+                      <h4 class="subheading">LSD</h4>
+                      <p class="text-muted">All invoices and payments happen through GetLance. Count on a simple and streamlined process.
+                          Hourly and fixed-price projects. For hourly work, submit timesheets through GetLance. For fixed-price jobs, set milestones and funds are released via GetLance escrow features.
+                          Multiple payment options. Choose a payment method that works best for you, from direct deposit or PayPal to wire transfer and more.</p>
+                         <center> <a href="./Secourisme.html"><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                          </a>
+                        </center>
+                        </div>
+      <div class="col-md-6 how-img">
+          <img src="./assets/LSD_Icon.png" class="rounded img-fluid" alt=""/>
+      </div>
+  </div>
+
+  <!------------Oral---------->
+    <div class="row">
+        <div class="col-md-6 how-img">
+             <img src="./assets/Party_Pills_Icon.png" class="rounded img-fluid" alt=""/>
+        </div>
+        <div class="col-md-6">
+          <center><h4>Avalé</h4></center>
+            
+                        <h4 class="subheading">Pills</h4>
+                        <p class="text-muted">Send and receive files. Deliver digital assets in a secure environment.
+                            Share feedback in real time. Use GetLance Messages to communicate via text, chat, or video.
+                            Use our mobile app. Many features can be accessed on your mobile phone when on the go.</p>
+                            <center> <a href=""><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                            </a>
+                          </center>
+          </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 how-img">
+           <img src="./assets/Space_Cake_Icon.png" class="rounded img-fluid" alt=""/>
+      </div>
+      <div class="col-md-6">
+        <center><h4>Avalé</h4></center>
+          
+                      <h4 class="subheading">Space Cakes</h4>
+                      <p class="text-muted">Send and receive files. Deliver digital assets in a secure environment.
+                          Share feedback in real time. Use GetLance Messages to communicate via text, chat, or video.
+                          Use our mobile app. Many features can be accessed on your mobile phone when on the go.</p>
+                          <center> <a href=""><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                          </a>
+                        </center>
+        </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 how-img">
+         <img src="./assets/Mushroom_Icon.png" class="rounded img-fluid" alt=""/>
+    </div>
+    <div class="col-md-6">
+      <center><h4>Avalé</h4></center>
+        
+                    <h4 class="subheading">Champignons</h4>
+                    <p class="text-muted">Send and receive files. Deliver digital assets in a secure environment.
+                        Share feedback in real time. Use GetLance Messages to communicate via text, chat, or video.
+                        Use our mobile app. Many features can be accessed on your mobile phone when on the go.</p>
+                        <center> <a href=""><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                        </a>
+                      </center>
+      </div>
+</div>
+
+  <div class="row">
+    <div class="col-md-6 how-img">
+         <img src="./assets/Weed_Leaf.png" class="rounded img-fluid" alt=""/>
+    </div>
+    <div class="col-md-6">
+      <center><h4>Maché</h4></center>
+        
+                    <h4 class="subheading">Feuilles De Canna</h4>
+                    <p class="text-muted">Send and receive files. Deliver digital assets in a secure environment.
+                        Share feedback in real time. Use GetLance Messages to communicate via text, chat, or video.
+                        Use our mobile app. Many features can be accessed on your mobile phone when on the go.</p>
+                        <center> <a href=""><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                        </a>
+                      </center>
+      </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 how-img">
+       <img src="./assets/Coca_Leaf.png" class="rounded img-fluid" alt=""/>
+  </div>
+  <div class="col-md-6">
+    <center><h4>Maché</h4></center>
+      
+                  <h4 class="subheading">Feuilles De Coca</h4>
+                  <p class="text-muted">Send and receive files. Deliver digital assets in a secure environment.
+                      Share feedback in real time. Use GetLance Messages to communicate via text, chat, or video.
+                      Use our mobile app. Many features can be accessed on your mobile phone when on the go.</p>
+                      <center> <a href=""><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                      </a>
+                    </center>
+    </div>
+</div>
+
+    <!------------Sniffé---------->
+
+    <div class="row">
+      <div class="col-md-6">
+        <center><h4>Sniffé</h4></center>
+          
+                      <h4 class="subheading">Poudre</h4>
+                      <p class="text-muted">Streamlined hiring. GetLance’s sophisticated algorithms highlight projects you’re a great fit for.
+                          Top Rated and Rising Talent programs. Enjoy higher visibility with the added status of prestigious programs.
+                          Do substantial work with top clients. GetLance pricing encourages freelancers to use GetLance for repeat relationships with their clients.</p>
+                          <center> <a href="./Physio.html"><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                          </a>
+                        </center>
+                        </div>
+      <div class="col-md-6 how-img">
+          <img src="./assets/Sniff_Nose_Icon.png" class="rounded img-fluid" alt=""/>
+      </div>
+  </div>
+
+<!-----------Injecté----------->
+
+<div class="row">
+  <div class="col-md-6 how-img">
+      <img src="./assets/IV_Icon.png" class="rounded img-fluid" alt=""/>
+  </div>
+  <div class="col-md-6">
+    <center><h4>Injecté</h4></center>
+                  <h4 class="subheading">xxxxxxxxxxxxx</h4>
+  <p class="text-muted">Freedom to work on ideal projects. On GetLance, you run your own business and choose your own clients and projects. Just complete your profile and we’ll highlight ideal jobs. Also search projects, and respond to client invitations.
+                      Wide variety and high pay. Clients are now posting jobs in hundreds of skill categories, paying top price for great work.
+                      More and more success. The greater the success you have on projects, the more likely you are to get hired by clients that use GetLance.</p>
+                      <center> <a href="./Substances.html"><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                      </a>
+                    </center>
+                    </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 how-img">
+      <img src="./assets/Crack_Icon.png" class="rounded img-fluid" alt=""/>
+  </div>
+  <div class="col-md-6">
+    <center><h4>Injecté</h4></center>
+                  <h4 class="subheading">Crack</h4>
+  <p class="text-muted">Freedom to work on ideal projects. On GetLance, you run your own business and choose your own clients and projects. Just complete your profile and we’ll highlight ideal jobs. Also search projects, and respond to client invitations.
+                      Wide variety and high pay. Clients are now posting jobs in hundreds of skill categories, paying top price for great work.
+                      More and more success. The greater the success you have on projects, the more likely you are to get hired by clients that use GetLance.</p>
+                      <center> <a href="./Substances.html"><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                      </a>
+                    </center>
+                    </div>
+</div>
+
+
+
+<!-----------Fumé------------->
+<div class="row">
+<div class="col-md-6">
+  <center><h4>Fumé</h4></center>  
+                <h4 class="subheading">Pipe (Crist Meth)</h4>
+                <p class="text-muted">All invoices and payments happen through GetLance. Count on a simple and streamlined process.
+                    Hourly and fixed-price projects. For hourly work, submit timesheets through GetLance. For fixed-price jobs, set milestones and funds are released via GetLance escrow features.
+                    Multiple payment options. Choose a payment method that works best for you, from direct deposit or PayPal to wire transfer and more.</p>
+                   <center> <a href="./Secourisme.html"><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                    </a>
+                  </center>
+                  </div>
+<div class="col-md-6 how-img">
+    <img src="./assets/Pipe_Cristals_Icon.png" class="rounded img-fluid" alt=""/>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <center><h4>Fumé</h4></center>  
+                  <h4 class="subheading">Bedo</h4>
+                  <p class="text-muted">All invoices and payments happen through GetLance. Count on a simple and streamlined process.
+                      Hourly and fixed-price projects. For hourly work, submit timesheets through GetLance. For fixed-price jobs, set milestones and funds are released via GetLance escrow features.
+                      Multiple payment options. Choose a payment method that works best for you, from direct deposit or PayPal to wire transfer and more.</p>
+                     <center> <a href="./Secourisme.html"><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                      </a>
+                    </center>
+                    </div>
+  <div class="col-md-6 how-img">
+      <img src="./assets/Bedo_Icon.png" class="rounded img-fluid" alt=""/>
+  </div>
+  </div>
+
+
+<div class="row">
+  <div class="col-md-6 how-img">
+       <img src="./assets/Bong_Icon.png" class="rounded img-fluid" alt=""/>
+  </div>
+  <div class="col-md-6">
+    <center><h4>Fumé</h4></center>
+      
+                  <h4 class="subheading">Bang</h4>
+                  <p class="text-muted">Send and receive files. Deliver digital assets in a secure environment.
+                      Share feedback in real time. Use GetLance Messages to communicate via text, chat, or video.
+                      Use our mobile app. Many features can be accessed on your mobile phone when on the go.</p>
+                      <center> <a href=""><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                      </a>
+                    </center>
+    </div>
+</div>
+
+<!---------Inhalé------------->
+<div class="row">
+<div class="col-md-6">
+  <center><h4>Inhalé</h4></center>
+    
+                <h4 class="subheading">Poppers</h4>
+                <p class="text-muted">Streamlined hiring. GetLance’s sophisticated algorithms highlight projects you’re a great fit for.
+                    Top Rated and Rising Talent programs. Enjoy higher visibility with the added status of prestigious programs.
+                    Do substantial work with top clients. GetLance pricing encourages freelancers to use GetLance for repeat relationships with their clients.</p>
+                    <center> <a href="./Physio.html"><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                    </a>
+                  </center>
+                  </div>
+<div class="col-md-6 how-img">
+    <img src="./assets/Poppers_Icon.png" class="rounded img-fluid" alt=""/>
+</div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-md-6 how-img">
+       <img src="./assets/Balloons.png" class="rounded img-fluid" alt=""/>
+  </div>
+  <div class="col-md-6">
+    <center><h4>Inhalé</h4></center>
+      
+                  <h4 class="subheading">Ballon</h4>
+                  <p class="text-muted">Send and receive files. Deliver digital assets in a secure environment.
+                      Share feedback in real time. Use GetLance Messages to communicate via text, chat, or video.
+                      Use our mobile app. Many features can be accessed on your mobile phone when on the go.</p>
+                      <center> <a href=""><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                      </a>
+                    </center>
+    </div>
+</div>
+
+
+ </div>
+
+
+  
+  </div>
+  <!---------------------------------------- Testing part---------------------------------------------------->
+  <div class="tab-pane fade" id="Testing">
+    <h1><strong>Testing</strong></h1>
+    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+  </div>
+<!---------------------------------------- Dosage et Cinétique part---------------------------------------------------->
+
+    <!---------------------------------------- DT part---------------------------------------------------->
+                    <!--Let's put an accordion inside, to split it into 3 parts-->
+                    <div class="tab-pane fade" id="DT">
+                      <!--Maybe it would be good to add a title + some labls with the type of drug, on top of the accordion-->
+                      <div style="margin:0.5rem ;"><h2><strong>Dosage - Cinétique - Dépistage</strong></h2></div>
+                      <div class="accordion" id="accordionExample">
+
+                        <div class="alert alert-dismissible alert-danger">
+                          <h5 class="alert-heading"><strong> Attention ! </strong></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                          Les doses et durées sont données à titre <strong> indicatif </strong> et sont sujets à de <strong> fortes variations intra et inter-individuelles ! </strong>
+                        </div>
+                  
+                        
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <strong>DOSAGE</strong>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                             
+                                    
+                            
+                              <div class="dosebars">
+                               
+                                <div class="progress">
+                                  <div class="progress-bar bg-dark" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <center>
+                                <p class="dosebartext"><strong>Dose Toxique:</strong> X à X mg</p> <br>
+                               </center>
+                                <p><em>Au delas de cette dose...</em></p>
+                            
+                              </div>
+                            
+                            
+                            
+                            
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <strong>TOXICOCINETIQUE</strong>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <strong>DEPISTAGE</strong>
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+
+                              <div class="alert alert-dismissible alert-danger">
+                                <h5 class="alert-heading"><strong> Attention ! </strong></h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                 Les durées moyennes de positivité indiquées <strong> ne sont que des indications </strong> permettant d’avoir des repères. Il n’existe <strong> aucun moyen de connaître précisément </strong> la durée de positivité d’une drogue car <strong> de nombreux facteurs peuvent la faire varier</strong>.</div>
+
+                              <div class="tabledosages">
+                              <table class="table table-hover">
+                                <thead>
+                                  
+                                  <th scope="col">Matrice</th>
+                                  <th scope="col">Usage Occasionnel (1 à 9/an)</th>
+                                  <th scope="col">Usage Réguilier (1 à 5/semaine)</th>
+                                  <th scope="col">Usage Quotidien</th>
+                                </tr>  
+                                  
+                                  
+                                  <tr class="table-light">
+                                    <th scope="row">
+                                       <img src="./assets/Salive_Logo.png" alt=""><center>SALIVE </center> 
+                                    </th>
+                                    <td>Column content</td>
+                                    <td>Column content</td>
+                                    <td>Column content</td>
+                                  </tr>
+
+                                  <tr class="table-warning">
+                                    <th scope="row">
+                                      <img src="./assets/Urine_Logo.png" alt=""> <center>URINE</center>
+                                   </th>
+                                    <td>Column content</td>
+                                    <td>Column content</td>
+                                    <td>Column content</td>
+                                  </tr>
+
+                                  <tr class="table-danger">
+                                    <th scope="row">
+                                      <img src="./assets/BloodTest_Logo.png" alt=""><center>SANG</center> 
+                                   </th>
+                                    <td>Column content</td>
+                                    <td>Column content</td>
+                                    <td>Column content</td>
+                                  </tr>
+                            
+                                </tbody>
+                              </table>
+                            </div>
+
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+  <!---------------------------------------- Effects part---------------------------------------------------->
+                
+  <div class="tab-pane fade" id="Effets">
+    
+    <!--Maybe it would be good to add a title + some labls with the type of drug, on top of the accordion-->
+   
+<h2><strong>Effets</strong></h2>
+
+    
+  </div>
+
+    <!---------------------------------------- Effets Toxiques part---------------------------------------------------->
+                    
+    <div class="tab-pane fade" id="Effets_Toxiques">
+    <h2><strong>Effets Secondaires et Toxiques</strong></h2>
+                      
+    </div>
+
+
+</div>
+ <!---------------------------------------- End of tab part------------------------------------------------------->
+  
+</div>
+<!--------------------------Let's add a footer with a disclamer----------------------------------------------------->
+<footer>
+<p>La consommation de drogue comporte <strong>toujours</strong> des risques et ne peut <strong>jamais</strong> être considéré comme sûre. Nous déconseillons fortement l'usage de drogues illégales</p>
+
+<p>La plupart des substances mentionnées sont illégales au regard de l'arrêté du 22 février 1990 fixant la liste des substances classées comme stupéfiants. La possession, l'achat ou le commerce de ces substances sont des délits et sont punissables par la loi, allant d’une peine d’emprisonnement de un à cinq ans et/ou d’une amende allant de 3 750 euros à 75 000 euros.</p>
+
+<p>Ces informations ne sont ni une suggestion ni une incitation à la consommation de drogues et ne sont pas non plus une incitation à la consommation de substances illégales conformément à l'article L.3421-4 du code de la santé publique Français.</p>
+
+</footer>
+<!---------------------------------------- Add a scroll to top button part------------------------------------------------------->
+<div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><strong>TOP</strong></button>
+</div> 
+<!---------------------------------------- XXXXXXX SCRIPTS XXXX---------------------------------------------------->
+<script src="./Scroll_to_Top.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://jacoblett.github.io/bootstrap4-latest/bootstrap-4-latest.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

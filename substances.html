@@ -41,6 +41,13 @@
 .card {
   border-radius: 75%;
 }
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+}
 </style>
 
   
@@ -104,13 +111,7 @@
 
    <center><h5 style="margin-left: 1rem ; margin-right:1rem;" class="preztext">De nombreuses substances psychotropes peuvent altérer la pensée et le jugement d'une personne et entraîner des risques pour la santé, notamment la dépendance, la conduite en état d'ébriété, les maladies infectieuses et les effets indésirables sur la grossesse. Vous trouverez ici des informations sur les drogues et médicaments les plus courants susceptibles d'entraîner un mauvais usage ou une dépendance.</h5>
    </center>
-   <br>
-
-   
-   <div class="alert alert-dismissible alert-danger">
-    <h5 class="alert-heading"><strong> Attention ! </strong></h5>
-    <center><h5>La consommation de drogues constitue un délit allant d’une peine d’emprisonnement de un à cinq ans et/ou d’une amende allant de 3 750 euros à 75 000 euros.</h5></center>
-  </div>   
+   <br> 
 <!-----------------------------Now a research bar on the left and a filter on the right--------------------------------------->
 <!-----------------------------The filter should be checkboxes, and inside a hiddable button if possible---------------------------------------->
 <div class="search_for_a_substance_with_filters">
@@ -204,33 +205,33 @@
 
 <nav aria-label="Nav bar letters" class="table-responsive mb-2 nav-justified" style="justify-content: center;">
   <ul class="pagination justify-content-center">
-    <li class="page-item"><a class="page-link" href="#">A</a></li>
-    <li class="page-item"><a class="page-link" href="#">B</a></li>
-    <li class="page-item"><a class="page-link" href="#">C</a></li>
-    <li class="page-item"><a class="page-link" href="#">D</a></li>
-    <li class="page-item"><a class="page-link" href="#">E</a></li>
-    <li class="page-item"><a class="page-link" href="#">F</a></li>
-    <li class="page-item"><a class="page-link" href="#">G</a></li>
-    <li class="page-item"><a class="page-link" href="#">H</a></li>
+    <li class="page-item"><a class="page-link" href="#A">A</a></li>
+    <li class="page-item"><a class="page-link" href="#B">B</a></li>
+    <li class="page-item"><a class="page-link" href="#C">C</a></li>
+    <li class="page-item"><a class="page-link" href="#D">D</a></li>
+    <li class="page-item"><a class="page-link" href="#E">E</a></li>
+    <li class="page-item"><a class="page-link" href="#F">F</a></li>
+    <li class="page-item"><a class="page-link" href="#G">G</a></li>
+    <li class="page-item"><a class="page-link" href="#H">H</a></li>
     <li class="page-item disabled"><a class="page-link" href="#">I</a></li>
     <li class="page-item disabled"><a class="page-link" href="#">J</a></li>
-    <li class="page-item"><a class="page-link" href="#">K</a></li>
+    <li class="page-item"><a class="page-link" href="#K">K</a></li>
     <li class="page-item"><a class="page-link" href="#">L</a></li>
-    <li class="page-item"><a class="page-link" href="#">M</a></li>
-    <li class="page-item"><a class="page-link" href="#">N</a></li>
-    <li class="page-item"><a class="page-link" href="#">O</a></li>
-    <li class="page-item"><a class="page-link" href="#">P</a></li>
+    <li class="page-item"><a class="page-link" href="#L">M</a></li>
+    <li class="page-item"><a class="page-link" href="#M">N</a></li>
+    <li class="page-item"><a class="page-link" href="#O">O</a></li>
+    <li class="page-item"><a class="page-link" href="#P">P</a></li>
     <li class="page-item disabled "><a class="page-link" href="#">Q</a></li>
     <li class="page-item disabled"><a class="page-link" href="#">R</a></li>
-    <li class="page-item"><a class="page-link" href="#">S</a></li>
+    <li class="page-item"><a class="page-link" href="#Q">S</a></li>
     <li class="page-item disabled"><a class="page-link" href="#">T</a></li>
     <li class="page-item disabled"><a class="page-link" href="#">U</a></li>
-    <li class="page-item"><a class="page-link" href="#">V</a></li>
+    <li class="page-item"><a class="page-link" href="#V">V</a></li>
     <li class="page-item disabled"><a class="page-link" href="#">W</a></li>
-    <li class="page-item"><a class="page-link" href="#">X</a></li>
-    <li class="page-item"><a class="page-link" href="#">Y</a></li>
+    <li class="page-item"><a class="page-link" href="#X">X</a></li>
+    <li class="page-item"><a class="page-link" href="#Y">Y</a></li>
     <li class="page-item disabled"><a class="page-link" href="#">Z</a></li>
-    <li class="page-item"><a class="page-link" href="#">#</a></li>
+    <li class="page-item"><a class="page-link" href="#numbered_substance">#</a></li>
   </ul>
 </nav>
 
@@ -421,7 +422,7 @@
           <h5><span class="badge bg-danger">Dépresseur</span>
           <span class="badge bg-success">Hallucinogène</span> 
           <span class="badge bg-info">Dissociatif</span> </h5>
-          <a href="./Ketamine.html"></a><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
+          <a href="./Ketamine_Article.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">Plus d'infos</button>
           </a></center> <h1></h1>
         </div>
       </div>
@@ -732,11 +733,23 @@
 
 
   </div>
+<!--------------------------Let's add a footer with a disclamer----------------------------------------------------->
+<footer>
+  <p>La consommation de drogue comporte <strong>toujours</strong> des risques et ne peut <strong>jamais</strong> être considéré comme sûre. Nous déconseillons fortement l'usage de drogues illégales</p>
+  
+  <p>La plupart des substances mentionnées sont illégales au regard de l'arrêté du 22 février 1990 fixant la liste des substances classées comme stupéfiants. La possession, l'achat ou le commerce de ces substances sont des délits et sont punissables par la loi, allant d’une peine d’emprisonnement de un à cinq ans et/ou d’une amende allant de 3 750 euros à 75 000 euros.</p>
+  
+  <p>Ces informations ne sont ni une suggestion ni une incitation à la consommation de drogues et ne sont pas non plus une incitation à la consommation de substances illégales conformément à l'article L.3421-4 du code de la santé publique Français.</p>
+  
+</footer>
+  
  <!---------------------------------------scroll back to top button--------------------------------------------------->
   
 <div>
   <button onclick="topFunction()" id="myBtn" title="Go to top"><strong>TOP</strong></button>
 </div> 
+
+
 
   <!---------------------------------------- end of doc part---------------------------------------------------->
   
