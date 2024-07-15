@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/NIZ_LOGO_TAB.jpg" />
+    <link rel="icon" href="./assets/NIZ_LOGO.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>NIZ - Cocaïne</title>
+    <style>
+section#timeline {
+  width: 80%;
+  margin: 20px auto;
+  position: relative;
+}
+section#timeline:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 -1px;
+  width: 2px;
+  height: 100%;
+  background: blue;
+}
+section#timeline article {
+  width: 100%;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+section#timeline article:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+section#timeline article div.inner {
+  width: 40%;
+  float: left;
+  margin: 5px 0 0 0;
+  border-radius: 6px;
+}
+section#timeline article div.inner span.date {
+  display: block;
+  width: 65px;
+  height: 65px;
+  padding: 1px 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin: 0 0 0 -32px;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: 1000;
+  text-transform: uppercase;
+  background:black;
+  color: white;
+  border: none;
+  box-shadow: 0 0 0 7px black;
+}
+section#timeline article div.inner span.date span {
+  display: block;
+  text-align: center;
+}
+section#timeline article div.inner span.date span.day {
+  font-size: 12px;
+}
+section#timeline article div.inner span.date span.month {
+  font-size: 18px;
+}
+section#timeline article div.inner span.date span.year {
+  font-size: 12px;
+}
+section#timeline article div.inner h2 {
+  padding: 15px;
+  margin: 0;
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+}
+section#timeline article div.inner h2:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: -5px;
+  	width: 10px; 
+	  height: 10px;
+  -webkit-transform: rotate(-45deg);
+}
+section#timeline article div.inner p {
+  padding: 15px;
+  margin: 0;
+  font-size: 17px;
+  background: #fff;
+  color: black;
+  border-radius: 0 0 6px 6px;
+
+}
+section#timeline article:nth-child(2n+2) div.inner {
+  float: right;
+}
+section#timeline article:nth-child(2n+2) div.inner h2:after {
+  left: -5px;
+}
+section#timeline article:nth-child(1) div.inner h2 {
+  background:blue;
+}
+section#timeline article:nth-child(1) div.inner h2:after {
+  background: blue;
+}
+section#timeline article:nth-child(2) div.inner h2 {
+  background: blue;
+}
+section#timeline article:nth-child(2) div.inner h2:after {
+  background: blue;
+}
+section#timeline article:nth-child(3) div.inner h2 {
+  background: blue;
+}
+section#timeline article:nth-child(3) div.inner h2:after {
+  background: blue;
+}
+section#timeline article:nth-child(4) div.inner h2 {
+  background: blue;
+}
+section#timeline article:nth-child(4) div.inner h2:after {
+  background: blue;
+}
+section#timeline article:nth-child(5) div.inner h2 {
+  background: blue;
+}
+section#timeline article:nth-child(5) div.inner h2:after {
+  background: blue;
+}
+
+
+
+
+.how-section1{
+    margin-top:-15%;
+    padding: 10%;
+   
+}
+.how-section1 h4{
+    color: blue;
+    font-weight: bold;
+    font-size: 30px;
+}
+.how-section1 .subheading{
+    color:black;
+    font-size: 25px;
+}
+.how-section1 .row
+{
+    margin-top: 5%;
+    
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 40%;
+}
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    font-family: Tw Cen MT Condensed;
+    border-width: 0.1rem;
+    border-color: grey;
+    outline: none;
+    background-color:transparent;
+    color: lightgrey;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 100%;
+  }
+  
+  #myBtn:hover {
+    background-color: black;
+    border-width: 0.1rem;
+    border-color: white;
+    color: white;
+  }
+    </style>
+
+  
+</head>
+<body style="font-family:Tw Cen MT Condensed;">
+<!-----------------------Let's set the Navbar--------------------->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html"
+      ><img src="./assets/NIZ_LOGO.jpg" alt=""></a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarColor02"
+      aria-controls="navbarColor02"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./substances.html"><h4> Substances </h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./secourisme.html"><h4>Secourisme - RDR - Sevrage </h4></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href=""><h4>Interactions </h4></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#"><h4>Contacts</h4></a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input
+          class="form-control me-sm-2"
+          type="text"
+          placeholder="Search"
+        />
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!------------------------------------------Let's set a Title---------------------------------------------------->
+<div style="margin: rem ; font-family:Tw Cen MT Condensed ;
+">  
+<center><h1><strong>COCAINE
+  </strong></h1>
+  <h4><span id="legal_ou_pas"class="badge bg-danger">ILLEGAL</span>
+    <span id="legal_ou_pas" class="badge bg-danger">STUPEFIANT</span>
+  </h4>
+</center>
+  </div>
+
+  <p style="padding:2% ;">
+    Depuis sa découverte au XIXe siècle, la cocaïne a été utilisée comme anesthésique local, notamment en ophtalmologie et en chirurgie. D’autres usages ont émergé, tels que le traitement de certains troubles de l’attention. Cependant, son potentiel d'addiction et ses effets euphorisants en ont fait une substance prisée dans les milieux festifs, se diffusant progressivement au-delà des cercles marginaux vers des environnements plus mainstream.
+  </p>
+ 
+  <!--Mettre un gros bouton LEGAL en vert ou ILLEGAL en touge SUR PRESCRIPTION en bleu------------------>
+
+  <!------------------------Then let's put a navigation to subset the different parts---------------------------->
+  <center>
+  <div style="margin: 1rem; font-family: Tw Cen MT Condensed;">
+  <center><ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="pills-physio-tab" data-toggle="pill" href="#Generalite" role="tab" aria-controls="pills-home-tab" aria-selected="true">GENERALITES</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Epidemiologie" role="tab" aria-controls="pills-profile-tab" aria-selected="false">CONSOMMATION-TRAFFIC-PRODUCTION</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Pharmacologie" role="tab" aria-controls="pills-profile-tab" aria-selected="false">PHARMACOCHIMIE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-physio-tab" data-toggle="pill" href="#Galenique" role="tab" aria-controls="pills-home-tab" aria-selected="true">GALENIQUE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#DT" role="tab" aria-controls="pills-profile-tab" aria-selected="false">DOSAGE - CINETIQUE - DEPISTAGE</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-physio-tab" data-toggle="pill" href="#Effets" role="tab" aria-controls="pills-home-tab" aria-selected="true">EFFETS</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="pills-physio-tab" data-toggle="pill" href="#Effets_Toxiques" role="tab" aria-controls="pills-home-tab" aria-selected="true">EFFETS SECONDAIRES ET TOXIQUES</a>
+    </li>
+
+  </ul>
+  </center>
+ </div>
+</center>
+
+<div id="myTabContent" class="tab-content" style="margin: 1rem; font-family: Tw Cen MT Condensed;">
+  <!---------------------------------------- Généralités part---------------------------------------------------->
+  <div class="tab-pane fade show active" id="Generalite">
+    <h2><strong>Histoire et Généralités</strong></h2>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1859</h4></center>
+                          <h4 class="subheading">Isolement de la cocaïne par Albert Niemann.</h4>
+          <p class="text">Albert Niemann extrait la cocaïne de la feuille de coca, marquant une avancée scientifique. Cette découverte ouvre la voie à des recherches sur ses propriétés médicales, notamment ses effets stimulants. </p>
+                              
+        </div>
+      </div>
+      </div>
+
+    <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1884</h4></center>
+                          <h4 class="subheading">Utilisation de la cocaïne comme anesthésique par Sigmund Freud.</h4>
+          <p class="text">Freud expérimente la cocaïne pour ses effets analgésiques et la recommande pour traiter diverses affections. Cela contribue à la popularité de la substance dans la médecine, soulevant cependant des questions sur ses effets à long terme.</p>
+                              
+        </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1886</h4></center>
+                          <h4 class="subheading">Introduction de la cocaïne dans le Coca-Cola.</h4>
+          <p class="text">La cocaïne est intégrée dans la formule originale du Coca-Cola, commercialisé comme un tonique. Cette pratique reflète l'usage courant de la substance, avant que des préoccupations sanitaires ne poussent à son retrait.</p>            
+        </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1914</h4></center>
+                          <h4 class="subheading">La loi Harrison limite la vente de la cocaïne aux États-Unis.</h4>
+          <p class="text">La loi Harrison impose des restrictions sur la distribution de la cocaïne, marquant un tournant dans la régulation des drogues. Elle vise à contrôler la dépendance croissante et les problèmes sociaux associés à l'usage des stupéfiants.</p>
+          </div>
+    </div>
+    </div>
+
+     <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1970's</h4></center>
+                        <center> <h4 class="subheading">Apparition des cartels colombiens et augmentation de la production.</h4></center>
+          <p class="text">Les cartels, notamment Medellín et Cali, dominent le marché mondial de la cocaïne, intensifiant la production en Colombie, entraînant violence et conflits internes. Les routes de trafic se diversifient, touchant de nombreux pays.</p>
+          </div>
+    </div>
+    </div>
+    
+    <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1980's</h4></center>
+                          <h4 class="subheading">Pic de la consommation de cocaïne dans les pays occidentaux.</h4>
+          <p class="text">La cocaïne devient une drogue emblématique des fêtes, entraînant une augmentation dramatique des consommateurs. Les effets sociaux et sanitaires deviennent préoccupants, ce qui pousse les gouvernements à réagir face à la crise.</p>
+          </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>1990's</h4></center>
+                          <h4 class="subheading">Renforcement des lois anti-drogue en France et ailleurs.</h4>
+          <p class="text">Face à la montée de la consommation, la France durcit sa législation sur les drogues, multipliant les opérations de répression. Les campagnes de sensibilisation se développent pour prévenir les risques liés à la consommation.</p>
+          </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>2000's</h4></center>
+                          <h4 class="subheading">Diminution de la consommation, mais apparition de nouvelles formes de consommation.</h4>
+          <p class="text">Bien que la consommation diminue, de nouvelles méthodes d'usage, comme le « freebase », émergent, rendant la cocaïne plus accessible et augmentant les risques sanitaires.</p>
+          </div>
+    </div>
+    </div>
+
+    <hr>
+
+    <div class="how-section1">
+      <div class="row">
+          <div class="col-md-6 how-img">
+              <img src="" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>2010's</h4></center>
+                          <h4 class="subheading">Lutte accrue contre le trafic et initiatives de prévention.</h4>
+          <p class="text">La France intensifie ses efforts pour combattre le trafic de cocaïne, collaborant avec d'autres pays européens. Des programmes de prévention et de réduction des risques sont mis en place pour sensibiliser la population.</p>
+          </div>
+    </div>
+    </div>
+   <center>
+  <h5> Aujourd’hui, En dépit de l'illégalité, la consommation de cocaïne persiste, soulignant les défis sanitaires actuels. Les autorités continuent de mettre en œuvre des politiques visant à protéger la santé publique et soutenir les usagers. </h5>
+</center> 
+  </div>
+  <!---------------------------------------- Epidémio part---------------------------------------------------->
+  
+  <div class="tab-pane fade" id="Epidemiologie">
+
+  
+   <!------------------------Then let's put a navigation to subset the different parts---------------------------->  
+    <div style="margin:1rem ;display: flex; align-items: center; justify-content: center;">
+      <center>
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                  <a class="nav-link active" id="pills-physio-tab" data-toggle="pill" href="#Epidemio_Sub" role="tab" aria-controls="pills-physio-tab" aria-selected="true">CONSOMMATION</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Traffic" role="tab" aria-controls="pills-tox-tab" aria-selected="false">TRAFFIC</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" id="pills-tox-tab" data-toggle="pill" href="#Production" role="tab" aria-controls="pills-tox-tab" aria-selected="false">PRODUCTION</a>
+                  </li>
+          </ul>       
+      </center>
+    </div>
+
+    <div id="myTabContent" class="tab-content">
+  
+  <!---------------------------------------- EPIDEMIO part---------------------------------------------------->
+    
+  <div class="tab-pane fade show active" id="Epidemio_Sub" style="margin: 1.5rem;">
+    
+    
+      <div>
+          <center>
+              <h2><strong>Epidemiologie</strong></h2>
+              
+          </center>
+    </div>
+    
+    <div>
+
+
+      <div class="how-section1">
+        <div class="row">
+            <div class="col-md-6 how-img">
+             <img src="./assets/MF.png" class="rounded img-fluid" alt=""/>
+            </div>
+              <div class="col-md-6">
+                <center><h4>SEXE</h4></center>
+              <p class="text">En général, les hommes sont plus susceptibles de consommer de la cocaïne que les femmes, avec un rapport souvent estimé à 2:1. Cette prévalence masculine est liée à des facteurs socioculturels et à des comportements à risque plus fréquents. Cependant, la consommation chez les femmes augmente, notamment parmi les jeunes adultes, souvent influencée par des dynamiques sociales et des relations. Les conséquences de l'usage diffèrent également : les hommes présentent souvent des comportements de consommation plus problématiques, tandis que les femmes sont plus susceptibles de développer des troubles liés à l'anxiété. La prévention doit donc s'adapter à ces différences pour être efficace.</p>                  
+              </div>
+        </div>
+    
+    
+          <div class="row">
+            <div class="col-md-6 how-img">
+              <img src="./assets/Ages_Logo.png" class="rounded img-fluid" alt=""/>
+            </div>
+
+            <div class="col-md-6">
+              <center><h4>AGE</h4></center>                
+              <p class="text">L'usage de cocaïne est le plus fréquent chez les jeunes adultes (18-34 ans), avec des taux allant de 1,5 à 3 %. Les adolescents (15-17 ans) présentent une prévalence d'environ 1 %. Chez les adultes de 35 à 54 ans, la consommation est plus stable, souvent liée à des antécédents d'usage. Les personnes de plus de 55 ans montrent une baisse significative de la consommation.</p>              
+            </div>
+           
+        </div>
+
+
+        <div class="row">
+          <div class="col-md-6 how-img">
+               <img src="./assets/Frequency_Logo.png" class="rounded img-fluid" alt=""/>
+          </div>
+          <div class="col-md-6">
+            <center><h4>Fréquence de Consommation</h4></center>
+              
+                          
+                          <p class="text">
+                            <ul>
+                              <li>Usage occasionnel : Environ 1 à 3 % des jeunes adultes consomment de la cocaïne lors de fêtes ou événements sociaux.</li>
+                              <li>Usage régulier : Près de 0,5 à 1 % des adultes rapportent une consommation hebdomadaire, souvent liée à des habitudes festives.</li>
+                              <li>Usage problématique : Environ 0,2 à 0,5 % des consommateurs développent une dépendance, nécessitant des soins.</li>
+                            </ul> 
+                          </p>
+                              
+            </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6 how-img">
+          <img src="./assets/Pie_Chart_Logo.png" class="rounded img-fluid" alt=""/>
+      </div>
+        <div class="col-md-6">
+          <center><h4>Voies d'Administration</h4></center>
+            
+                        
+                        <p class="text">
+                          <ul>
+                            <li>La cocaïne sniffée est la méthode la plus courante, particulièrement chez les jeunes adultes, représentant environ 60-70 % des utilisateurs.</li>
+                            <li>L'injection, souvent associée à un usage plus problématique, concerne environ 15-20 % des consommateurs et est plus fréquente chez les usagers de drogues injectables.</li>
+                            <li>Le fumage (freebase ou crack) a gagné en popularité, surtout dans les milieux urbains, représentant 20-30 % des utilisateurs, souvent en raison de ses effets immédiats et intenses.</li>
+                          </ul>
+                          Chaque voie d'administration est liée à des risques spécifiques, notamment en matière de santé et de dépendance.
+                        </p>
+                            
+                          </div>
+
+    </div>
+
+
+
+
+    </div>
+  </div>
+  </div>
+
+  <!---------------------------------------- TRAFFIC part---------------------------------------------------->
+  <div class="tab-pane fade" id="Traffic" style="margin: 1.5rem;">
+      
+      <div>
+          <center>
+                  <h2><strong>Traffic</strong></h2>
+                  <
+          </center>
+      </div>
+
+
+      <div>
+
+<p><ul>
+  <li>En 2024, le trafic de cocaïne reste un enjeu majeur au niveau mondial. La production, principalement concentrée en Colombie, a atteint environ 1 700 tonnes en 2023, avec une augmentation continue. Les cartels colombiens, tels que ceux de Medellín et Cali, contrôlent près de 80 % du marché mondial. L’Europe est une destination clé, avec des saisies record : près de 200 tonnes de cocaïne interceptées en 2023, principalement en Espagne et aux Pays-Bas</li>
+  <li>En France, le trafic est en hausse, avec une prévalence de consommation estimée à 1,5 % de la population adulte. La lutte contre ce phénomène implique des opérations internationales et un renforcement des politiques de prévention, face à une demande croissante, notamment chez les jeunes adultes. Les autorités intensifient les efforts pour démanteler les réseaux de distribution, en collaboration avec d’autres pays européens.</li>
+</ul></p>
+          
+
+
+      </div>
+  
+  </div>
+
+  <!---------------------------------------- PRODUCTION part---------------------------------------------------->
+  <div class="tab-pane fade" id="Production" style="margin: 1.5rem;">
+      
+      <div>
+          <center>
+                  <h2><strong>Production</strong></h2>
+                  
+          </center>
+      </div>
+
+
+      <div>
+
+          <p type="text">
+            <ul>
+              <li>La production de cocaïne continue d'être dominée par la Colombie, qui a atteint une production estimée à 1 700 tonnes en 2023. Cette hausse est attribuée à l'expansion des cultures de coca, avec environ 210 000 hectares consacrés à la culture de la feuille de coca. Les cartels colombiens, notamment ceux de Medellín et Cali, contrôlent une grande partie de cette production, profitant de l'instabilité régionale.</li>
+              <li>Les méthodes de production se diversifient, utilisant des laboratoires clandestins de plus en plus sophistiqués. Malgré les efforts internationaux pour lutter contre le trafic, la demande mondiale reste élevée, en particulier en Europe et en Amérique du Nord, renforçant ainsi le cycle de production. La lutte contre cette économie informelle demeure un défi complexe pour les gouvernements et les organisations internationales.</li>
+            </ul>
+          </p>
+      </div>
+  
+  </div>
+
+
+
+</div>
+  
+  </div>
+  <!---------------------------------------- Pharmacologie part---------------------------------------------------->
+  <div class="tab-pane fade" id="Pharmacologie">
+    <h2><strong>Pharmacologie</strong></h2>
+    <p>La cocaïne est un alcaloïde extrait des feuilles de coca, possédant plusieurs propriétés physico-chimiques clés. Sa formule chimique est C17H21NO4, et son poids moléculaire est de 303,4 g/mol. Elle se présente sous forme de poudre cristalline blanche, soluble dans l'eau, ce qui facilite son utilisation par voie intraveineuse ou sniffée. La cocaïne a un pKa d'environ 8,6, indiquant qu'elle est principalement sous forme ionisée à pH physiologique, ce qui influence son absorption et sa biodisponibilité.
+      En termes de stabilité, la cocaïne est sensible à la chaleur et à l'humidité, ce qui peut affecter sa qualité lors du stockage. Ses formes sous différentes formes, comme le chlorhydrate de cocaïne (poudre) et le freebase (base libre), présentent des caractéristiques différentes. Le chlorhydrate est stable et se dissout facilement dans l'eau, tandis que le freebase est plus volatile et se fume, produisant des effets plus rapides et intenses.</p>
+
+    <p>La cocaïne est un puissant stimulant du système nerveux central qui agit principalement en inhibant la recapture de neurotransmetteurs, notamment la dopamine, la noradrénaline et la sérotonine. En bloquant les transporteurs de la dopamine, la cocaïne augmente les niveaux de dopamine dans la synapse, entraînant une euphorie intense et des effets stimulants. Cette action est à l'origine de son potentiel addictif, provoquant des modifications des circuits de récompense du cerveau, ce qui peut mener à une consommation compulsive. </p>
+  </div>
+  <!---------------------------------------- Galénique part---------------------------------------------------->
+  <div class="tab-pane fade" id="Galenique">
+    <h2><strong>Galénique</strong></h2>
+
+<div class="row">
+  <div class="col-md-6 how-img">
+       <img src="./assets/Coca_Leaf.png" class="rounded img-fluid" alt=""/>
+  </div>
+  <div class="col-md-6">
+    <center><h4>Maché</h4></center>
+      
+                  <h4 class="subheading">Feuilles De Coca</h4>
+                  <p class="text-muted">Send and receive files. Deliver digital assets in a secure environment.
+                      Share feedback in real time. Use GetLance Messages to communicate via text, chat, or video.
+                      Use our mobile app. Many features can be accessed on your mobile phone when on the go.</p>
+                      <center> <a href=""><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                      </a>
+                    </center>
+    </div>
+</div>
+
+    <!------------Sniffé---------->
+
+    <div class="row">
+      <div class="col-md-6">
+        <center><h4>Sniffé</h4></center>
+          
+                      <h4 class="subheading">Poudre</h4>
+                      <p class="text-muted">Streamlined hiring. GetLance’s sophisticated algorithms highlight projects you’re a great fit for.
+                          Top Rated and Rising Talent programs. Enjoy higher visibility with the added status of prestigious programs.
+                          Do substantial work with top clients. GetLance pricing encourages freelancers to use GetLance for repeat relationships with their clients.</p>
+                          <center> <a href="./Physio.html"><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                          </a>
+                        </center>
+                        </div>
+      <div class="col-md-6 how-img">
+          <img src="./assets/Sniff_Nose_Icon.png" class="rounded img-fluid" alt=""/>
+      </div>
+  </div>
+
+<!-----------Injecté----------->
+
+    <center><h4>Injecté</h4></center>
+                  <h4 class="subheading">Crack</h4>
+  <p class="text-muted">Freedom to work on ideal projects. On GetLance, you run your own business and choose your own clients and projects. Just complete your profile and we’ll highlight ideal jobs. Also search projects, and respond to client invitations.
+                      Wide variety and high pay. Clients are now posting jobs in hundreds of skill categories, paying top price for great work.
+                      More and more success. The greater the success you have on projects, the more likely you are to get hired by clients that use GetLance.</p>
+                      <center> <a href="./Substances.html"><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="primary">En savoir plus</button>
+                      </a>
+                    </center>
+                    </div>
+</div>
+
+
+
+
+
+  
+  </div>
+  <!---------------------------------------- Testing part---------------------------------------------------->
+  <div class="tab-pane fade" id="Testing">
+    <h1><strong>Testing</strong></h1>
+    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+  </div>
+<!---------------------------------------- Dosage et Cinétique part---------------------------------------------------->
+
+    <!---------------------------------------- DT part---------------------------------------------------->
+                    <!--Let's put an accordion inside, to split it into 3 parts-->
+                    <div class="tab-pane fade" id="DT">
+                      <!--Maybe it would be good to add a title + some labls with the type of drug, on top of the accordion-->
+                      <div style="margin:0.5rem ;"><h2><strong>Dosage - Cinétique - Dépistage</strong></h2></div>
+                      <div class="accordion" id="accordionExample">
+
+                        <div class="alert alert-dismissible alert-danger">
+                          <h5 class="alert-heading"><strong> Attention ! </strong></h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                          Les doses et durées sont données à titre <strong> indicatif </strong> et sont sujets à de <strong> fortes variations intra et inter-individuelles ! </strong>
+                        </div>
+                  
+                        
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <strong>DOSAGE</strong>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                             
+                                    
+                            
+                              <div class="dosebars">
+                               
+                                <div class="progress">
+                                  <div class="progress-bar bg-dark" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <center>
+                                <p class="dosebartext"><strong>Dose Toxique:</strong> X à X mg</p> <br>
+                               </center>
+                                <p><em>Au delas de cette dose...</em></p>
+                            
+                              </div>
+                            
+                            
+                            
+                            
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <strong>TOXICOCINETIQUE</strong>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              <strong>DEPISTAGE</strong>
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+
+                              <div class="alert alert-dismissible alert-danger">
+                                <h5 class="alert-heading"><strong> Attention ! </strong></h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                 Les durées moyennes de positivité indiquées <strong> ne sont que des indications </strong> permettant d’avoir des repères. Il n’existe <strong> aucun moyen de connaître précisément </strong> la durée de positivité d’une drogue car <strong> de nombreux facteurs peuvent la faire varier</strong>.</div>
+
+                              <div class="tabledosages">
+                              <table class="table table-hover">
+                                <thead>
+                                  
+                                  <th scope="col">Matrice</th>
+                                  <th scope="col">Usage Occasionnel (1 à 9/an)</th>
+                                  <th scope="col">Usage Réguilier (1 à 5/semaine)</th>
+                                  <th scope="col">Usage Quotidien</th>
+                                </tr>  
+                                  
+                                  
+                                  <tr class="table-light">
+                                    <th scope="row">
+                                       <img src="./assets/Salive_Logo.png" alt=""><center>SALIVE </center> 
+                                    </th>
+                                    <td>Column content</td>
+                                    <td>Column content</td>
+                                    <td>Column content</td>
+                                  </tr>
+
+                                  <tr class="table-warning">
+                                    <th scope="row">
+                                      <img src="./assets/Urine_Logo.png" alt=""> <center>URINE</center>
+                                   </th>
+                                    <td>Column content</td>
+                                    <td>Column content</td>
+                                    <td>Column content</td>
+                                  </tr>
+
+                                  <tr class="table-danger">
+                                    <th scope="row">
+                                      <img src="./assets/BloodTest_Logo.png" alt=""><center>SANG</center> 
+                                   </th>
+                                    <td>Column content</td>
+                                    <td>Column content</td>
+                                    <td>Column content</td>
+                                  </tr>
+                            
+                                </tbody>
+                              </table>
+                            </div>
+
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+  <!---------------------------------------- Effects part---------------------------------------------------->
+                
+  <div class="tab-pane fade" id="Effets">
+    
+    <!--Maybe it would be good to add a title + some labls with the type of drug, on top of the accordion-->
+   
+<h2><strong>Effets</strong></h2>
+
+    
+  </div>
+
+    <!---------------------------------------- Effets Toxiques part---------------------------------------------------->
+                    
+    <div class="tab-pane fade" id="Effets_Toxiques">
+    <h2><strong>Effets Secondaires et Toxiques</strong></h2>
+                      
+    </div>
+
+
+</div>
+ <!---------------------------------------- End of tab part------------------------------------------------------->
+  
+</div>
+<!---------------------------------------- Add a scroll to top button part------------------------------------------------------->
+<div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><strong>TOP</strong></button>
+</div> 
+<!---------------------------------------- XXXXXXX SCRIPTS XXXX---------------------------------------------------->
+<script src="/Scroll_to_Top.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://jacoblett.github.io/bootstrap4-latest/bootstrap-4-latest.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
